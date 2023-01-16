@@ -1,3 +1,4 @@
+# 쿼리를 Object로 반환해주는 함수
 
 ```jsx
 const getQueryObj = <T extends {}> (search: string): T => {

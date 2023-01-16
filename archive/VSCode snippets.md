@@ -1,5 +1,6 @@
+# VSCode snippets
 
-VScode 에서 사용하고 있는 스니펫.
+> VScode 에서 사용하고 있는 스니펫.
 
 ## For TSX files
 
