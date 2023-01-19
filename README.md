@@ -24,6 +24,11 @@ _
 		- [You Might Not Need an Effect](archive/You%20Might%20Not%20Need%20an%20Effect.md)
 
 _
+### Knowledges
+
+- [ELU](archive/ELU.md)
+
+_
 ### Tips
 
 - [깃헙 파일을 API로 받아오는 경로](archive/깃헙%20파일을%20API로%20받아오는%20경로.md)
