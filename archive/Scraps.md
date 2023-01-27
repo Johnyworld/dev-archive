@@ -3,15 +3,25 @@
 ### React
 
 - [ ] [React BETA](https://beta.reactjs.org/)
+	- [ ] [useImperativeHandle](https://beta.reactjs.org/reference/react/useImperativeHandle)
+	- [x] [You Might Not Need an Effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect)
+- React Query
+	- [ ] [React query 튜토리얼](https://github.com/ssi02014/react-query-tutorial#devtools)
+	- [ ] [Effective React Query Keys](https://tkdodo.eu/blog/effective-react-query-keys)
 - [ ] [react-email](https://react.email/docs/introduction)
 - [ ] [리액트의 렌더링은 어떻게 일어나는가?](https://yceffort.kr/2022/04/deep-dive-in-react-rendering#%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%A0%8C%EB%8D%94%EB%A7%81%EC%9D%84-%EB%8B%A4%EB%A3%A8%EB%8A%94%EA%B0%80)
-- [ ] [React query 튜토리얼](https://github.com/ssi02014/react-query-tutorial#devtools)
 - [ ] [컴파운드 컴포넌트](https://www.smashingmagazine.com/2021/08/compound-components-react/(https://www.smashingmagazine.com/2021/08/compound-components-react)
 - [ ] [React Context 잘 쓰는 법](https://velog.io/@velopert/react-context-tutorial)
 - [ ] [함수형 컴포넌트와 클래스 컴포넌트](https://overreacted.io/ko/how-are-function-components-different-from-classes)
 - [ ] [리액트 커스텀 훅을 테스트하는 과정](https://meetup.toast.com/posts/321)
 - [ ] [How to use React Context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively)
 - [ ] [It’s 2022, Don’t Just Use React Anymore](https://javascript.plainenglish.io/its-2022-don-t-just-use-react-anymore-33659ed663c9)
+- [ ] [Don't over useState](https://tkdodo.eu/blog/dont-over-use-state)
+- [ ] [A (Mostly) Complete Guide to React Rendering Behavior](https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/)
+- [ ] [Web Vitals](https://web.dev/i18n/en/vitals/)
+- [ ] [Why Isn’t X a Hook?](https://overreacted.io/why-isnt-x-a-hook/)
+- [ ] [Design System Decision Record](https://so-so.dev/react/design-system-decision-record/)
+- [ ] [ECMAScript Temporal Proposal](https://github.com/tc39/proposal-temporal)
 
 ### Next
 
@@ -26,6 +36,11 @@
 - [ ] [(번역)더 좋은 타입스크립트 프로그래머로 만드는 11가지 팁](https://velog.io/@lky5697/11-tips-that-help-you-become-a-better-typescript-programmer?utm_source=substack&utm_medium=email)
 - [ ] [What Are K, T, and V in TypeScript Generics?](https://medium.com/frontend-canteen/what-are-k-t-and-v-in-typescript-generics-9fabe1d0f0f3)
 - [ ] [How we use Typescript with React](https://medium.com/imersotechblog/how-we-use-typescript-with-react-a3eb33129416)
+
+### 자바스크립트
+
+- [x] [자바스크립트에서 타임존 다루기 1](https://meetup.nhncloud.com/posts/125)
+- [ ] [자바스크립트에서 타임존 다루기 2](https://meetup.nhncloud.com/posts/130)
 - [ ] [V8 Engine](https://garden.bradwoods.io/blueprints/js-engine/basic)
 
 ### 웹 프론트엔드
