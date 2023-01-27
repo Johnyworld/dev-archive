@@ -777,17 +777,22 @@ function useData(url) {
 }
 ```
 
-You’ll likely also want to add some logic for error handling and to track whether the content is loading. You can build a Hook like this yourself or use one of the many solutions already available in the React ecosystem. **Although this alone won’t be as efficient as using a framework’s built-in data fetching mechanism, moving the data fetching logic into a custom Hook will make it easier to adopt an efficient data fetching strategy later.**
+당신도 아마 에러 핸들링과 컨텐트가 로딩중인지 트래킹하는 로직을 추가하고 싶을 것이다. 이와 같은 훅을 스스로 만들거나 리액트 생태계에 이미 존재하는 많은 해결책들중 하나를 사용할 수 있다. **비록 프레임 워크에 내장 된 데이터 페칭 메커니즘을 사용하는 것보다 효율적이지 않을 지라도, 데이터 페칭 로직을 커스텀 훅에 집어 넣는 것은 추후에 효율적인 데이터 페칭 전략을 채택하는 것이 쉬워질 것이다.**
 
-In general, whenever you have to resort to writing Effects, keep an eye out for when you can extract a piece of functionality into a custom Hook with a more declarative and purpose-built API like `useData` above. The fewer raw `useEffect` calls you have in your components, the easier you will find to maintain your application.
+일반적으로, Effects 작성에 의존해야 할 때 마다, 위의 `useData`와 같이 보다 선언적이고 목적에 맞게 제작 된 API 를 사용하여 커스텀 훅에 기능을 추출할 수 있는 시점을 주시하라. 컴포넌트 내의 날것의 `useEffects` 호출이 적을수록 앱을 더 쉽게 유지보수 할 수 있다.
 
 ## Recap
 
--   If you can calculate something during render, you don’t need an Effect.
--   To cache expensive calculations, add `useMemo` instead of `useEffect`.
--   To reset the state of an entire component tree, pass a different `key` to it.
--   To reset a particular bit of state in response to a prop change, set it during rendering.
--   Code that needs to run because a component was _displayed_ should be in Effects, the rest should be in events.
--   If you need to update the state of several components, it’s better to do it during a single event.
--   Whenever you try to synchronize state variables in different components, consider lifting state up.
--   You can fetch data with Effects, but you need to implement cleanup to avoid race conditions.
+- 렌더중에 뭔가를 계산할 수 있다면 Effect가 필요 하지 않다.
+- 무거운 계산을 캐시하려면 `useEffect` 대신 `useMemo` 를 사용하라
+- 컴포넌트 전체 트리의 state를 재설정 하려면 다른 `key`를 전달하라.
+- prop 변경에 대한 응답으로 특정 state를 재설정 하려면 렌더링 중 설정 하라.
+- 컴포넌트가 표시 되었기 때문에 실행돼야 하는 코드는 Effects 내에 있어야 하고 나머지는 이벤트 내에 있어야 한다.
+- 여러개의 컴포넌트의 state를 업데이트 하려면 하나의 이벤트 중에 실행하는게 낫다.
+- 서로 다른 컴포넌트간의 state 변수를 동기화 하려고 시도할때라면 언제든 state 끌어 올리기를 고려하라.
+- Effects로 데이터를 가져올 수 있지만 경쟁 조건을 피하기 위해 정리를 구현해야한다.
+
+
+
+
+
