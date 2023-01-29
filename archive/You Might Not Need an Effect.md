@@ -684,11 +684,11 @@ function ChatIndicator() {
 }
 ```
 
-This approach is less error-prone than manually syncing mutable data to React state with an Effect. Typically, you’ll write a custom Hook like `useOnlineStatus()` above so that you don’t need to repeat this code in the individual components. [Read more about subscribing to external stores from React components.](https://beta.reactjs.org/reference/react/useSyncExternalStore)
+이 접근은 변경 가능한 데이터를 Effect로 리액트 state와 수동으로 동기화 하는 것 보다 에러를 덜 발생시킨다. 일반적으로, 개별 컴포넌트에서 이 코드를 반복할 필요 없도록 위의 `useOnlineStatus()` 같은 커스텀 훅을 작성 한다. [리액트 컴포넌트에서 외부 저장소를 구독하기](https://beta.reactjs.org/reference/react/useSyncExternalStore)를 읽어보세요.
 
-### Fetching data [](https://beta.reactjs.org/learn/you-might-not-need-an-effect#fetching-data "Link for Fetching data")
+### 데이터 가져오기
 
-Many apps use Effects to kick off data fetching. It is quite common to write a data fetching Effect like this:
+많은 앱들은 Effect를 사용하여 데이터 가져오기를 시작한다. 다음과 같이 데이터 가져오는 Effect를 작성하는 것은 일반적인 방법이다:
 
 ```js
 function SearchResults({ query }) {
@@ -709,13 +709,15 @@ function SearchResults({ query }) {
 }
 ```
 
-You _don’t_ need to move this fetch to an event handler.
+이 fetch 를 이벤트 핸들러로 옮길 필요가 없다.
 
-This might seem like a contradiction with the earlier examples where you needed to put the logic into the event handlers! However, consider that it’s not _the typing event_ that’s the main reason to fetch. Search inputs are often prepopulated from the URL, and the user might navigate Back and Forward without touching the input. It doesn’t matter where `page` and `query` come from. While this component is visible, you want to keep `results` [synchronized](https://beta.reactjs.org/learn/synchronizing-with-effects) with data from the network according to the current `page` and `query`. This is why it’s an Effect.
+이것은 로직을 이벤트 핸들러에 놓아야 했던 위의 예제와는 모순처럼 보일 수 있다! 하지만, fetch 해야 할 주 이유가 타이핑 이벤트가 아님을 고려하라. 
 
-However, the code above has a bug. Imagine you type `"hello"` fast. Then the `query` will change from `"h"`, to `"he"`, `"hel"`, `"hell"`, and `"hello"`. This will kick off separate fetches, but there is no guarantee about which order the responses will arrive in. For example, the `"hell"` response may arrive _after_ the `"hello"` response. Since it will call `setResults()` last, you will be displaying the wrong search results. This is called a [“race condition”](https://en.wikipedia.org/wiki/Race_condition): two different requests “raced” against each other and came in a different order than you expected.
+검색창은 종종 URL로 미리 채워지고, 사용자는 입력을 건드리지 않고 뒤로, 앞으로 탐색할 수 있다. `page` 와 `query` 가 어디서 오든 상관 없다. 컴포넌트가 표시되는 동안, 현재 `page` 와 `query` 에 따라 네트워크의 데이터와 동기화된 `결과` 를 유지 하려고 한다. 이것이 Effect인 이유이다.
 
-**To fix the race condition, you need to [add a cleanup function](https://beta.reactjs.org/learn/synchronizing-with-effects#fetching-data) to ignore stale responses:**
+하지만, 위의 코드는 버그가 있다. `"hello"`를 빠르게 타이핑 한다고 상상해보자.  `query`는 `"h"`, `"he"`, `"hel"`, `"hell"`, `"hello"` 로 바뀔 것이다. 이것은 분리 된 가져오기를 시작하지만 응답이 도착하는 순서를 보장하지 않는다. 예를들어, `hell` 응답이 `hello` 응답보다 나중에 도착할 수 있다. `setResults()`를 마지막으로 호출할 것이기 때문에, 잘못 된 검색 결과를 표시하게 될 것이다. 이것은[ "조건 경쟁"](https://en.wikipedia.org/wiki/Race_condition)라고 불린다: 두개의 다른 요청은 서로"경쟁"하여 예상치 못한 다른 순서로 수신되었다.
+
+조건 경쟁을 고치기 위해, 오래 된 응답을 무시하기 위해 [클린업 함수를 추가](https://beta.reactjs.org/learn/synchronizing-with-effects#fetching-data)할 필요가 있다.
 
 ```js
 function SearchResults({ query }) {
@@ -740,11 +742,15 @@ function SearchResults({ query }) {
 }
 ```
 
-This ensures that when your Effect fetches data, all responses except the last requested one will be ignored.
+Effect 가 데이터를 가져올 때, 마지막 요청을 제외한 모든 응답이 무시 될 것임을 보장한다.
 
-Handling race conditions is not the only difficulty with implementing data fetching. You might also want to think about how to cache the responses (so that the user can click Back and see the previous screen instantly instead of a spinner), how to fetch them on the server (so that the initial server-rendered HTML contains the fetched content instead of a spinner), and how to avoid network waterfalls (so that a child component that needs to fetch data doesn’t have to wait for every parent above it to finish fetching their data before it can start). **These issues apply to any UI library, not just React. Solving them is not trivial, which is why modern [frameworks](https://beta.reactjs.org/learn/start-a-new-react-project#building-with-a-full-featured-framework) provide more efficient built-in data fetching mechanisms than writing Effects directly in your components.**
+조건 경쟁을 처리 하는 것은 데이터 가져오는것을 구현하는 것의 유일한 여러움은 아니다. 또한 
+- 어떻게 응답을 캐시하는지(사용자가 뒤로가기를 클릭하면 스피너 대신 이전 화면을 즉시 볼 수 있다), 
+- 어떻게 서버에서 그것들을 가져오는지(초기 서버 렌더링 HTML에는 스피너 대신, 가져온 컨텐츠가 포함된다),
+- 그리고 어떻게 네트워크 폭포를 피하는지(데이터를 가져와야 하는 하위 구성요소가 시작하기 전에 상위의 모든 부모가 데이터를 가져오기까지 기다리 필요가 없다) 
+를 생각하고 싶을 것이다. **이 이슈들은 리액트 뿐 아니라 어떤 UI 라이브러리에도 적용된다. 그것들을 해결하는 것은 사소한 일이 아니기 때문에 최신 [프레임워크](https://beta.reactjs.org/learn/start-a-new-react-project#building-with-a-full-featured-framework)들은 Effect 를 직접 컴포넌트에 작성하는 것 보다 더 효율적인 내장 데이터 가져오기 메커니즘을 제공한다. **
 
-If you don’t use a framework (and don’t want to build your own) but would like to make data fetching from Effects more ergonomic, consider extracting your fetching logic into a custom Hook like in this example:
+프레임워크를 사용하지 않고 (그리고 직접 구축하고 싶지 않고) Effects 에서 데이터 가져오기를 좀 더 인체공학적으로 만들고싶다면 다음 예제와 같이 가져오기 로직을 커스텀 훅으로 추출하는 것을 고려하라.
 
 ```js
 function SearchResults({ query }) {
