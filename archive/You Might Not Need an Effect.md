@@ -409,8 +409,6 @@ function Game() {
 
 이 사례에서, 렌더링 중 계산하고 이벤트 핸들러에서 state를 조정하는 것이 낫다.
 
-In this case, it’s better to calculate what you can during rendering, and adjust the state in the event handler:
-
 ```js
 function Game() {
   const [card, setCard] = useState(null);
