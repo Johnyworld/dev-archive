@@ -4,8 +4,10 @@
 
 - [ ] [React BETA](https://beta.reactjs.org/)
 	- [ ] [useImperativeHandle](https://beta.reactjs.org/reference/react/useImperativeHandle)
-	- [x] [You Might Not Need an Effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect)
-- React Query
+	- [ ] Escape Hatches
+		- [ ] [Referencing Values with Refs](https://beta.reactjs.org/learn/referencing-values-with-refs)
+		- [x] [You Might Not Need an Effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect)
+- [ ] React Query
 	- [ ] [React query 튜토리얼](https://github.com/ssi02014/react-query-tutorial#devtools)
 	- [ ] [Effective React Query Keys](https://tkdodo.eu/blog/effective-react-query-keys)
 - [ ] [react-email](https://react.email/docs/introduction)
