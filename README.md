@@ -21,12 +21,16 @@ _
 - [Don't over useState](archive/Don't%20over%20useState.md)
 - React Beta 문서
 	- Escape hatches
+		- [Referencing Values with Refs](archive/Referencing%20Values%20with%20Refs.md)
+		- [Manipulating the DOM with Refs](archive/Manipulating%20the%20DOM%20with%20Refs.md)
 		- [You Might Not Need an Effect](archive/You%20Might%20Not%20Need%20an%20Effect.md)
 
 _
 ### Knowledges
 
 - [ELU](archive/ELU.md)
+- [데일리 스크럼](archive/데일리%20스크럼.md)
+- [M1 칩 Mac 에서 Homebrew 설치](archive/M1%20칩%20Mac%20에서%20Homebrew%20설치.md)
 
 _
 ### Tips
