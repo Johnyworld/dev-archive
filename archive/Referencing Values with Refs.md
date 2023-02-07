@@ -31,9 +31,9 @@ const ref = useRef(0);
 }
 ```
 
-You can access the current value of that ref through the `ref.current` property. This value is intentionally mutable, meaning you can both read and write to it. It’s like a secret pocket of your component that React doesn’t track. (This is what makes it an “escape hatch” from React’s one-way data flow—more on that below!)
+`ref.current` 프로퍼티를 통해 ref 의 current 값에 액세스 할 수 있다. 이 값은 의도적으로 변경할 수 있다, 읽고 쓰기가 가능하다는 것을 의미한다. 리액트가 추적하지 않는 컴포넌트의 비밀 주머니와 같다. (이것이 리액트의 단방향 데이터 흐름으로부터의 탈출구로 만드는 것이다. 자세한 내용은 아래를 보자!)
 
-Here, a button will increment `ref.current` on every click:
+여기 매 클릭마다 `ref.current` 를 증가시키는 버튼이 있다.
 
 ```js
 import { useRef } from 'react';
@@ -54,20 +54,20 @@ export default function Counter() {
 }
 ```
 
-The ref points to a number, but, like [state](https://beta.reactjs.org/learn/state-a-components-memory), you could point to anything: a string, an object, or even a function. Unlike state, ref is a plain JavaScript object with the `current` property that you can read and modify.
+ref 점수는 숫자이지만  [state](https://beta.reactjs.org/learn/state-a-components-memory) 처럼, 문자열, 객체, 아니면 함수라 하더라도 어떤 타입이라도 가능하다. state와는 다르게, ref는 읽고 쓰기가 가능한 `current` 속성이 있는 일반 자바스크립트 객체이다.
 
-Note that **the component doesn’t re-render with every increment.** Like state, refs are retained by React between re-renders. However, setting state re-renders a component. Changing a ref does not!
+컴포넌트는 매 증가마다 리렌더 하지 않는다. state 처럼, refs 는 리렌더 사이에 리액트에 의해 유지된다. 하지만 state를 설정하면 리렌더가 되지만 ref를 변경하는 것은 그렇지 않다.
 
-## Example: building a stopwatch [](https://beta.reactjs.org/learn/referencing-values-with-refs#example-building-a-stopwatch "Link for Example: building a stopwatch")
+## 예제: 스톱워치 만들기
 
-You can combine refs and state in a single component. For example, let’s make a stopwatch that the user can start or stop by pressing a button. In order to display how much time has passed since the user pressed “Start”, you will need to keep track of when the Start button was pressed and what the current time is. **This information is used for rendering, so you’ll keep it in state:**
+하나의 컴포넌트에서 refs 와 state를 합칠 수 있다. 예를 들어, 유저가 버튼을 통해 시작하거나 멈출 수 있는 스톱워치를 만들어보자. 사용자가 시작을 누르고 얼마나 시간이 지났는지 표시하기 위해, 시작 버튼을 누른 시간과 현재 시간을 추적해야 한다. **이 정보는 렌더링 중 사용된다. 그래서 state 에 유지한다:**
 
 ```js
 const [startTime, setStartTime] = useState(null);
 const [now, setNow] = useState(null);
 ```
 
-When the user presses “Start”, you’ll use [`setInterval`](https://developer.mozilla.org/docs/Web/API/setInterval) in order to update the time every 10 milliseconds:
+사용자가 시작을 누르면, 매 10ms마다 업데이트 하기 위해 [`setInterval`](https://developer.mozilla.org/docs/Web/API/setInterval) 를 사용할 것이다.
 
 ```js
 import { useState } from 'react';
@@ -103,7 +103,7 @@ export default function Stopwatch() {
 }
 ```
 
-When the “Stop” button is pressed, you need to cancel the existing interval so that it stops updating the `now` state variable. You can do this by calling [`clearInterval`](https://developer.mozilla.org/en-US/docs/Web/API/clearInterval), but you need to give it the interval ID that was previously returned by the `setInterval` call when the user pressed Start. You need to keep the interval ID somewhere. **Since the interval ID is not used for rendering, you can keep it in a ref:**
+"정지" 버튼이 누르면, `now` state 변수를 업데이트하는 것을 멈추게 하도록 존재하는 인터벌을 취소 해야 한다. [`clearInterval`](https://developer.mozilla.org/en-US/docs/Web/API/clearInterval) 로 이걸 수행할 수 있지만 유저가 시작 버튼을 눌렀을 때, `setInterval` 호출에 의해 이전에 반환 된 interval ID를 제공해야 한다. 어딘가에 interval ID 를 보관해야 한다. **interval ID 는 렌더링 중 사용되지 않으므로 ref에 저장할 수 있다.**
 
 ```js
 import { useState, useRef } from 'react';
@@ -146,20 +146,20 @@ export default function Stopwatch() {
 }
 ```
 
-When a piece of information is used for rendering, keep it in state. When a piece of information is only needed by event handlers and changing it doesn’t require a re-render, using a ref may be more efficient.
+정보의 조각이 렌더링 중 사용 됐을 때, state를 유지하라. 정보의 조각이 오직 이벤트 핸들러와 리렌더가 필요하지 않는 경우, ref를 사용하는 것은 더 효율적일 수 있다.
 
-## Differences between refs and state [](https://beta.reactjs.org/learn/referencing-values-with-refs#differences-between-refs-and-state "Link for Differences between refs and state")
+## refs 와 state의 다른 점들
 
-Perhaps you’re thinking refs seem less “strict” than state—you can mutate them instead of always having to use a state setting function, for instance. But in most cases, you’ll want to use state. Refs are an “escape hatch” you won’t need often. Here’s how state and refs compare:
+아마도 state 보다 refs 가 덜 엄격하다고 생각 할 지 모른다. 예를 들어 항상 state setting 함수를 사용하는 대신 그것들을 변경할 수 있다. 그러나 대부분의 경우 state 를 사용하고 싶을 것이다. Refs 는 자주 필요하지 않은 "탈출구" 이다. state 와 refs 를 비교하는 방법은 다음과 같다:
 
 | refs | state |
 |---|---|
-| `useRef(initialValue)` returns `{ current: initialValue }` | `useState(initialValue)` returns the current value of a state variable and a state setter function ( `[value, setValue]`) |
-| Doesn’t trigger re-render when you change it. | Triggers re-render when you change it. |
-| Mutable—you can modify and update `current`’s value outside of the rendering process. | “Immutable”—you must use the state setting function to modify state variables to queue a re-render. |
-| You shouldn’t read (or write) the `current` value during rendering. | You can read state at any time. However, each render has its own [snapshot](https://beta.reactjs.org/learn/state-as-a-snapshot) of state which does not change. | 
+| `useRef(initialValue)` 는 `{ current: initialValue }` 를 반환한다. | `useState(initialValue)` 는 현재 state 변수의 값과 setter 함수를 반환한다. ( `[value, setValue]`) |
+| 변경 됐을 때 리렌더 되지 않는다. | 변경 됐을 때 리렌더를 트리거 한다. |
+| "변화 가능" - 렌더링 과정 밖에서 `current`의 값을 수정할 수 있다. | "불변성" — 리렌더를 하려고 state 변수를 수정하기 위해 반드시 setting 함수를 사용해야 한다. |
+| 렌더링 중 `currnet` 값을 읽거나 수정하면 안된다. | 언제든 state 값을 읽을 수 있지만 각 렌더는 변경되지 않은 state의 각 [스냅샷](https://beta.reactjs.org/learn/state-as-a-snapshot) 을 가진다. | 
 
-Here is a counter button that’s implemented with state:
+여기 state 로 구현 된 카운터 버튼이 있다:
 
 ```js
 import { useState } from 'react';
@@ -179,9 +179,9 @@ export default function Counter() {
 }
 ```
 
-Because the `count` value is displayed, it makes sense to use a state value for it. When the counter’s value is set with `setCount()`, React re-renders the component and the screen updates to reflect the new count.
+`count` 값이 표시 됐기 때문에, state 값을 사용하는 것이 말이 된다. 카운터 값이 `setCount()` 로 설정 될 때, 리액트는 컴포넌트를 리렌더 하고 새로운 카운트를 반영하기 위해 화면을 업데이트 한다.
 
-If you tried to implement this with a ref, React would never re-render the component, so you’d never see the count change! See how clicking this button **does not update its text**:
+ref 로 이것을 구현하려 한다면, 리액트는 리렌더 하지 않을것이다. 그래서 카운트가 바뀌는 것을 볼 수 없다. 이 버튼을 클릭하는 것이 어떻게 그의 text를 **업데이트 하지 않는지** 보자:
 
 ```js
 import { useRef } from 'react';
@@ -202,12 +202,11 @@ export default function Counter() {
 }
 ```
 
-This is why reading `ref.current` during render leads to unreliable code. If you need that, use state instead.
+렌더 중 `ref.current` 를 읽는 것이 신뢰할 수 없는 코드로 이어지는 이유이다. 이게 필요하다면, 대신 state 를 사용하라.
 
 ---
 
-DEEPDIVE
-#### How does useRef work inside? [](https://beta.reactjs.org/learn/referencing-values-with-refs#how-does-use-ref-work-inside "Link for How does useRef work inside?")
+#### DEEPDIVE: How does useRef work inside?
 
 Although both `useState` and `useRef` are provided by React, in principle `useRef` could be implemented _on top of_ `useState`. You can imagine that inside of React, `useRef` is implemented like this:
 
