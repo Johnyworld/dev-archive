@@ -208,7 +208,7 @@ export default function Counter() {
 
 #### DEEPDIVE: How does useRef work inside?
 
-Although both `useState` and `useRef` are provided by React, in principle `useRef` could be implemented _on top of_ `useState`. You can imagine that inside of React, `useRef` is implemented like this:
+리액트로부터 `useState`와 `useRef` 가 모두 제공 되지만, 원칙적으로 `useRef` 는 `useState` 위에 구현될 수 있다. 리액트 내에서 `useRef` 가 다음과 같이 구현된다고 상상할 수 있다:
 
 ```js
 // Inside of React
@@ -218,49 +218,50 @@ function useRef(initialValue) {
 }
 ```
 
-During the first render, `useRef` returns `{ current: initialValue }`. This object is stored by React, so during the next render the same object will be returned. Note how the state setter is unused in this example. It is unnecessary because `useRef` always needs to return the same object!
+첫번째 렌더링 중, `useRef`는 `{ current: initialValue }`를 리턴한다. 이 객체는 리액트에 의해 저장되므로 다름 렌더링중 같은 객체가 반환 될 것이다. 이 예제에서 state 설정자가 어떻게 사용되지 않았는지 보라. `useRef`는 항상 같은 객체를 반환해야 하기 때문에 불필요하다.
 
-React provides a built-in version of `useRef` because it is common enough in practice. But you can think of it as a regular state variable without a setter. If you’re familiar with object-oriented programming, refs might remind you of instance fields—but instead of `this.something` you write `somethingRef.current`.
+리액트는 `useRef`의 내장 버전을 제공한다. 실무에서 흔히 볼 수 있기 때문에. 하지만 setter 가 없는 일반적인 state 변수처럼 생각하면 된다. OOP(객체 지향 프로그래밍)에 익숙하다면, 참조는 인스턴스 필드를 상기시킬 수 있지만 `this.somthing` 대신 `somethingRef.current` 라고 쓴다.
 
 ---
 
-## When to use refs [](https://beta.reactjs.org/learn/referencing-values-with-refs#when-to-use-refs "Link for When to use refs")
+## 언제 refs 를 사용하는가
 
-Typically, you will use a ref when your component needs to “step outside” React and communicate with external APIs—often a browser API that won’t impact the appearance of the component. Here are a few of these rare situations:
+일반적으로, 컴포넌트라 React 에서 "벗어나" 외부 API(종종 컴포넌트의 모양에 영향이 미치지 않는 브라우저 API) 와 통신해야 할 때 ref를 사용한다. 다음은 이러한 드문 상황 중 일부이다:
 
--   Storing [timeout IDs](https://developer.mozilla.org/docs/Web/API/setTimeout)
--   Storing and manipulating [DOM elements](https://developer.mozilla.org/docs/Web/API/Element), which we cover on [the next page](https://beta.reactjs.org/learn/manipulating-the-dom-with-refs)
--   Storing other objects that aren’t necessary to calculate the JSX.
+- [timeout IDs](https://developer.mozilla.org/docs/Web/API/setTimeout) 저장
+- [다음 페이지](https://beta.reactjs.org/learn/manipulating-the-dom-with-refs) 에서 다루는 [DOM 엘리먼트](https://developer.mozilla.org/docs/Web/API/Element) 저장 및 조작
+- JSX를 계산하는 데 필요하지 않은 다른 객체를 저장한다.
 
-If your component needs to store some value, but it doesn’t impact the rendering logic, choose refs.
+컴포넌트가 어떤 값을 저장해야 하지만, 렌더링 로직에 영향을 미치지 않는 경우 refs 를 선택하라.
 
-## Best practices for refs [](https://beta.reactjs.org/learn/referencing-values-with-refs#best-practices-for-refs "Link for Best practices for refs")
+## refs 모범 사례
 
-Following these principles will make your components more predictable:
+다음 원칙을 따르면 컴포넌트를 더 예측 가능하게 만들 수 있다.
 
--   **Treat refs as an escape hatch.** Refs are useful when you work with external systems or browser APIs. If much of your application logic and data flow relies on refs, you might want to rethink your approach.
--   **Don’t read or write `ref.current` during rendering.** If some information is needed during rendering, use [state](https://beta.reactjs.org/learn/state-a-components-memory) instead. Since React doesn’t know when `ref.current` changes, even reading it while rendering makes your component’s behavior difficult to predict. (The only exception to this is code like `if (!ref.current) ref.current = new Thing()` which only sets the ref once during the first render.)
+- **참조를 탈출구로 취급한다.** Refs는 외부 시스템 또는 브라우저 API로 작업할 때 유용하다. 애플리케이션 로직 및 데이터 흐름의 대부분이 refs에 의존하는 경우 접근 방식을 다시 생각해 볼 수 있다.
+- **렌더링 중에 `ref.current`를 읽거나 쓰지 마라.**  렌더링 중 일부 정보가 필요한 경우 [state](https://beta.reactjs.org/learn/state-a-components-memory)를 대신 사용하라. 리액트는 `ref.current`가 언제 변경되는지 모르기 때문에 렌더링 하는 동안 읽어도 컴포넌트의 동작을 예측하기 어렵다. (유일한 예외는 첫 번째 렌더링 중에 ref를 한번만 설정하는 `if (!ref.current) ref.current = new Thing()` 와 같은 코드이다.)
 
-Limitations of React state don’t apply to refs. For example, state acts like a [snapshot for every render](https://beta.reactjs.org/learn/state-as-a-snapshot) and [doesn’t update synchronously.](https://beta.reactjs.org/learn/queueing-a-series-of-state-updates) But when you mutate the current value of a ref, it changes immediately:
+리액트 state 제한은 refs 에 적용되지 않는다. 예를 들어, state는 [모든 렌더링에 대한 스냅샷](https://beta.reactjs.org/learn/state-as-a-snapshot) 처럼 작동하고 [동기적으로 업데이트 되지 않는다.](https://beta.reactjs.org/learn/queueing-a-series-of-state-updates) 그러나 ref의 현재 값을 변경하면 즉시 변경된다:
 
 ```js
 ref.current = 5;
 console.log(ref.current); // 5
 ```
 
-This is because **the ref itself is a regular JavaScript object,** and so it behaves like one.
+이는 **ref 자체가 일반 JavaScript 객체이기 때문에** 하나처럼 작동하기 때문이다.
 
-You also don’t need to worry about [avoiding mutation](https://beta.reactjs.org/learn/updating-objects-in-state) when you work with a ref. As long as the object you’re mutating isn’t used for rendering, React doesn’t care what you do with the ref or its contents.
+또한 ref로 작업할 때 [돌연변이 방지](https://beta.reactjs.org/learn/updating-objects-in-state)에 대해 걱정할 필요가 없다. 변경하려는 객체가 렌더링에 사용되지 않는 한 React는 ref 또는 그 내용으로 무엇을 하든 상관하지 않는다.
 
-## Refs and the DOM [](https://beta.reactjs.org/learn/referencing-values-with-refs#refs-and-the-dom "Link for Refs and the DOM")
+## Refs 와 DOM
 
-You can point a ref to any value. However, the most common use case for a ref is to access a DOM element. For example, this is handy if you want to focus an input programmatically. When you pass a ref to a `ref` attribute in JSX, like `<div ref={myRef}>`, React will put the corresponding DOM element into `myRef.current`. You can read more about this in [Manipulating the DOM with Refs.](https://beta.reactjs.org/learn/manipulating-the-dom-with-refs)
+ref는 모든 값을 가리킬 수 있습니다. 그러나 ref의 가장 일반적인 사용 사례는 DOM 요소에 액세스하는 것입니다. `<div ref={myRef}>` 와 같이 JSX의 `ref` 속성에 ref를 전달하면 리액트는 해당 DOM 요소를 `myRef.current` 에 넣는다. 이것에 대해 [Manipulating the DOM with Refs](Manipulating%20the%20DOM%20with%20Refs.md) 에서 더 읽어볼 수 있다.
 
-## Recap[](https://beta.reactjs.org/learn/referencing-values-with-refs#recap "Link for Recap")
+## 요약
 
--   Refs are an escape hatch to hold onto values that aren’t used for rendering. You won’t need them often.
--   A ref is a plain JavaScript object with a single property called `current`, which you can read or set.
--   You can ask React to give you a ref by calling the `useRef` Hook.
--   Like state, refs let you retain information between re-renders of a component.
--   Unlike state, setting the ref’s `current` value does not trigger a re-render.
--   Don’t read or write `ref.current` during rendering. This makes your component hard to predict.
+- Refs 는 렌더링에 사용되지 않는 값을 유지하기 위한 탈출구이다. 자주 필요하지는 않다.
+- ref는 읽거나 설정할 수 있는 `current` 라는 단일 속성이 있는 일반적인 자바스크립트 객체이다.
+- `useRef` 훅을 호출하여 리액트에 ref 를 제공하도록 요청할 수 있다.
+- state 처럼 refs 를 사용하면 컴포넌트를 렌더링 하는 사이에 정보를 유지할 수 있다.
+- state 와는 달리, ref 의 `current` 값을 설정해도 다시 렌더링 되지 않는다.
+- 렌더링 중 `ref.current` 를 읽거나 쓰지 마라. 이로 인해 구성요소를 예측하기 어렵다.
+
