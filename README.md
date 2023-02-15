@@ -31,6 +31,7 @@ _
 - [ELU](archive/ELU.md)
 - [데일리 스크럼](archive/데일리%20스크럼.md)
 - [M1 칩 Mac 에서 Homebrew 설치](archive/M1%20칩%20Mac%20에서%20Homebrew%20설치.md)
+- [존잡생각 - 회사에서 본인을 빠르게 성장시키는 방법](archive/존잡생각%20-%20회사에서%20본인을%20빠르게%20성장시키는%20방법.md)
 
 _
 ### Tips
