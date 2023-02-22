@@ -95,11 +95,16 @@
 
 - [ ] [배포 전략의 종류](https://reference-m1.tistory.com/211)
 
+### 블로그
+
+- [ ] [토스페이먼츠 프론트엔드 챕터](https://tosspayments-dev.oopy.io/chapters/frontend/about)
+- [ ] [소소로그](https://so-so.dev/)
+
 ### 기타
 
 - [ ] [일론 머스크의 미친 생상성을 위한 6가지 법칙](https://news.hada.io/topic?id=7860&utm_source=slack&utm_medium=bot&utm_campaign=TK3T0NVK7)
-- [ ] [토스페이먼츠 프론트엔드 챕터](https://tosspayments-dev.oopy.io/chapters/frontend/about)
-- [ ] [소소로그](https://so-so.dev/)
 - [ ] [A collaborative approach to software development](https://medium.com/@lucastrazzullo/a-collaborative-approach-to-software-development-34d6671b8552)
 - [ ] [Top layer dev-tools](https://developer.chrome.com/blog/top-layer-devtools/)
 - [ ] [리스트큐 링크드큐](https://www.youtube.com/playlist?list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ)
+- [x] [왜 당신의 일일 스탠드업 미팅은 실패하는가](https://news.hada.io/topic?id=8352&utm_source=slack&utm_medium=bot&utm_campaign=TK3T0NVK7)
+- [x] [데일리 스크럼 : '데일리 스크럼'을 더 잘하기 위한 생각](https://helloworld.kurly.com/blog/daily-scrum-thinking/)
