@@ -23,6 +23,7 @@ _
 	- Escape hatches
 		- [Referencing Values with Refs](archive/Referencing%20Values%20with%20Refs.md)
 		- [Manipulating the DOM with Refs](archive/Manipulating%20the%20DOM%20with%20Refs.md)
+		- [Synchronizing with Effects](archive/Synchronizing%20with%20Effects.md)
 		- [You Might Not Need an Effect](archive/You%20Might%20Not%20Need%20an%20Effect.md)
 
 _
