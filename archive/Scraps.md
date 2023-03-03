@@ -44,6 +44,7 @@
 - [x] [자바스크립트에서 타임존 다루기 1](https://meetup.nhncloud.com/posts/125)
 - [ ] [자바스크립트에서 타임존 다루기 2](https://meetup.nhncloud.com/posts/130)
 - [ ] [V8 Engine](https://garden.bradwoods.io/blueprints/js-engine/basic)
+- [ ] [Yarn Berry - Zero Install](https://helloinyong.tistory.com/341)
 
 ### 웹 프론트엔드
 
@@ -67,6 +68,10 @@
 
 - [ ] [모듈 페더레이션](https://toneyparky.tistory.com/65)
 - [ ] [다이나믹 리모트 컨테이너](https://betterprogramming.pub/rendering-dynamic-remote-containers-in-a-react-micro-frontend-1dd97019824f)
+
+### 모노레포
+
+- [Turborepo로 모노레포 개발 경험 향상하기](https://engineering.linecorp.com/ko/blog/monorepo-with-turborepo/)
 
 ### Git
 
@@ -108,3 +113,4 @@
 - [ ] [리스트큐 링크드큐](https://www.youtube.com/playlist?list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ)
 - [x] [왜 당신의 일일 스탠드업 미팅은 실패하는가](https://news.hada.io/topic?id=8352&utm_source=slack&utm_medium=bot&utm_campaign=TK3T0NVK7)
 - [x] [데일리 스크럼 : '데일리 스크럼'을 더 잘하기 위한 생각](https://helloworld.kurly.com/blog/daily-scrum-thinking/)
+- [x] [Bool 변수 이름 제대로 짓기 위한 최소한의 영어 문법](https://soojin.ro/blog/naming-boolean-variables)
