@@ -9,7 +9,6 @@ _
 
 - [문서 주도 개발](archive/문서%20주도%20개발.md)
 - [Form 컴포넌트 제출값을 테스트 하는 방법](archive/Form%20컴포넌트%20제출값을%20테스트%20하는%20방법.md)
-- [첫 번째 렌더링에서 useEffect 실행하지 않는 커스텀 훅](archive/첫%20번째%20렌더링에서%20useEffect%20실행하지%20않는%20커스텀%20훅.md)
 - [리액트에서 Link를 테스트 할 수 없을 때 - MemoryRouter](archive/리액트에서%20Link를%20테스트%20할%20수%20없을%20때%20-%20MemoryRouter.md)
 - [Peer Dependencies 에 대하여](archive/Peer%20Dependencies%20에%20대하여.md)
 - [Github SSH 접속시 Operation Timeout 문제](archive/Github%20SSH%20접속시%20Operation%20Timeout%20문제.md)
