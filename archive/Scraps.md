@@ -24,6 +24,7 @@
 - [ ] [Why Isn’t X a Hook?](https://overreacted.io/why-isnt-x-a-hook/)
 - [ ] [Design System Decision Record](https://so-so.dev/react/design-system-decision-record/)
 - [ ] [ECMAScript Temporal Proposal](https://github.com/tc39/proposal-temporal)
+- [ ] [useEffect 와 useLayoutEffect 의 차이는 무엇일까?](https://medium.com/@jnso5072/react-useeffect-%EC%99%80-uselayouteffect-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-e1a13adf1cd5)
 
 ### Next
 
@@ -33,11 +34,14 @@
 ### 타입스크립트
 
 - [ ] [TS Challenges](https://github.com/type-challenges/type-challenges/blob/main/README.ko.md)
+- [ ] [Typescript Deep Dive](https://basarat.gitbook.io/typescript/)
 - [ ] [TypeScript 튜플 타입 요리하기](https://blog.cometkim.kr/posts/typescript-tuples/)
 - [ ] [TypeScript 타입 정의 읽기 — 몇 가지만 알면 쉬워요](https://driip.me/b812974b-3974-46e3-829e-1476b9b30c94)
 - [ ] [(번역)더 좋은 타입스크립트 프로그래머로 만드는 11가지 팁](https://velog.io/@lky5697/11-tips-that-help-you-become-a-better-typescript-programmer?utm_source=substack&utm_medium=email)
 - [ ] [What Are K, T, and V in TypeScript Generics?](https://medium.com/frontend-canteen/what-are-k-t-and-v-in-typescript-generics-9fabe1d0f0f3)
 - [ ] [How we use Typescript with React](https://medium.com/imersotechblog/how-we-use-typescript-with-react-a3eb33129416)
+- [ ] [infer](https://velog.io/@from_numpy/TypeScript-infer)
+- [ ] [Tuple](https://velog.io/@from_numpy/TypeScript-Tuple%ED%8A%9C%ED%94%8C)
 
 ### 자바스크립트
 
@@ -48,6 +52,7 @@
 
 ### 웹 프론트엔드
 
+- [x] [프론트엔드 아키텍처: Business Logic의 분리](https://medium.com/@shinbaek89/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-business-logic%EC%9D%98-%EB%B6%84%EB%A6%AC-adc10ae881ab)
 - [ ] [SSR(Server-Side-Rendering) 그리고 SSG(Static-Site-Generation)](https://velog.io/@longroadhome/FE-SSRServer-Side-Rendering-%EA%B7%B8%EB%A6%AC%EA%B3%A0-SSGStatic-Site-Generation-feat.-NEXT%EB%A5%BC-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C)
 - [ ] [BFF](https://fe-developers.kakaoent.com/2022/220310-kakaopage-bff/)
 - [ ] [페인트 최적화](https://web.dev/i18n/ko/optimize-lcp/)
@@ -58,6 +63,7 @@
 - [ ] [SSR - React Query](https://react-query-v2.tanstack.com/guides/ssr)
 - [ ] [Linkify](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=qbxlvnf11&logNo=221228425967&parentCategoryNo=&categoryNo=37&viewDate=&isShowPopularPosts=false&from=postView&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2F1IMuLtDS6LQKHBqCzzBRBbCtfPshWranQLRNipgalPsO41MsrULIaAto_EALw_wcB)
 - [ ] [링크 & 읽을거리 - FE News](https://github.com/naver/fe-news/blob/master/issues/2022-09.md)
+- [ ] [쿠키와 세션](https://interconnection.tistory.com/74)
 
 ### 함수형 프로그래밍
 
@@ -114,3 +120,4 @@
 - [x] [왜 당신의 일일 스탠드업 미팅은 실패하는가](https://news.hada.io/topic?id=8352&utm_source=slack&utm_medium=bot&utm_campaign=TK3T0NVK7)
 - [x] [데일리 스크럼 : '데일리 스크럼'을 더 잘하기 위한 생각](https://helloworld.kurly.com/blog/daily-scrum-thinking/)
 - [x] [Bool 변수 이름 제대로 짓기 위한 최소한의 영어 문법](https://soojin.ro/blog/naming-boolean-variables)
+- [x] [자주 틀리는 띄어쓰기, 여기서 딱 정해 드립니다](https://meetup.nhncloud.com/posts/359)
