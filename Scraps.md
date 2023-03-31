@@ -121,3 +121,4 @@
 - [x] [데일리 스크럼 : '데일리 스크럼'을 더 잘하기 위한 생각](https://helloworld.kurly.com/blog/daily-scrum-thinking/)
 - [x] [Bool 변수 이름 제대로 짓기 위한 최소한의 영어 문법](https://soojin.ro/blog/naming-boolean-variables)
 - [x] [자주 틀리는 띄어쓰기, 여기서 딱 정해 드립니다](https://meetup.nhncloud.com/posts/359)
+- [ ] [a11y level up!](https://studio-jt.co.kr/a11y-level-up-%EC%9B%B9%EC%A0%91%EA%B7%BC%EC%84%B1-%EB%A0%88%EB%B2%A8%EC%97%85/)
