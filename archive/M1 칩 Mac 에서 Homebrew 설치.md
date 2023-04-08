@@ -1,6 +1,6 @@
 # M1 칩 Mac 에서 Homebrew 설치
 
-#팁 #튜토리얼
+#Tips
 
 터미널에서 아래 명령어 입력 후 iTerm 재실행
 

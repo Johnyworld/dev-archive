@@ -1,6 +1,6 @@
 # useEventCallback
 
-#코드조각
+#Snippets
 
 ```jsx
 const useEventCallback = function (fn) {
