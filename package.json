@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "gen": "ts-node script/generateList.ts"
+  },
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@types/prettier": "^2.7.2",
