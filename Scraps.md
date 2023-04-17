@@ -1,5 +1,11 @@
 # 스크랩
 
+### Tech Article & News
+
+- https://news.hada.io/
+- https://yozm.wishket.com/magazine/list/design/
+- https://kofearticle.substack.com/
+
 ### React
 
 - [ ] [React BETA](https://beta.reactjs.org/)
@@ -7,9 +13,12 @@
 	- [ ] Escape Hatches
 		- [ ] [Referencing Values with Refs](https://beta.reactjs.org/learn/referencing-values-with-refs)
 		- [x] [You Might Not Need an Effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect)
+- [ ] [React.gg](https://react.gg/)
+	- [ ] [React.gg Visualized](https://react.gg/visualized)
 - [ ] React Query
 	- [ ] [React query 튜토리얼](https://github.com/ssi02014/react-query-tutorial#devtools)
 	- [ ] [Effective React Query Keys](https://tkdodo.eu/blog/effective-react-query-keys)
+- [ ] [LINE MANGA: Page Stack을 이용해서 페이지 전환 처리하기](https://engineering.linecorp.com/ko/blog/line-manga-smooth-page-transition-with-page-stack)
 - [ ] [react-email](https://react.email/docs/introduction)
 - [ ] [리액트의 렌더링은 어떻게 일어나는가?](https://yceffort.kr/2022/04/deep-dive-in-react-rendering#%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%A0%8C%EB%8D%94%EB%A7%81%EC%9D%84-%EB%8B%A4%EB%A3%A8%EB%8A%94%EA%B0%80)
 - [ ] [컴파운드 컴포넌트](https://www.smashingmagazine.com/2021/08/compound-components-react/(https://www.smashingmagazine.com/2021/08/compound-components-react)
@@ -111,6 +120,7 @@
 
 ### 블로그
 
+- [ ] [토스 프론트엔드 챕터의 모든 것](https://tosspublic.notion.site/cc9367e44ff6424181899f3cf250f5d2#e6b1d26a88934da998176789ad030787)
 - [ ] [토스페이먼츠 프론트엔드 챕터](https://tosspayments-dev.oopy.io/chapters/frontend/about)
 - [ ] [소소로그](https://so-so.dev/)
 
@@ -125,3 +135,4 @@
 - [x] [Bool 변수 이름 제대로 짓기 위한 최소한의 영어 문법](https://soojin.ro/blog/naming-boolean-variables)
 - [x] [자주 틀리는 띄어쓰기, 여기서 딱 정해 드립니다](https://meetup.nhncloud.com/posts/359)
 - [ ] [a11y level up!](https://studio-jt.co.kr/a11y-level-up-%EC%9B%B9%EC%A0%91%EA%B7%BC%EC%84%B1-%EB%A0%88%EB%B2%A8%EC%97%85/)
+- [ ] [개발자 온보딩 가이드 : 첫 90일을 어떻게 해야 할까](https://news.hada.io/topic?id=4643)
