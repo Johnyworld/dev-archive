@@ -118,6 +118,10 @@
 
 - [ ] [배포 전략의 종류](https://reference-m1.tistory.com/211)
 
+### 텍스트 에디터
+
+- [ ] [FECONF 2022 - 텍스트 에디터? 그게 뭘 만드는 건데?](https://youtu.be/xDyUFE1pmmY?t=67)
+
 ### 블로그
 
 - [ ] [토스 프론트엔드 챕터의 모든 것](https://tosspublic.notion.site/cc9367e44ff6424181899f3cf250f5d2#e6b1d26a88934da998176789ad030787)
