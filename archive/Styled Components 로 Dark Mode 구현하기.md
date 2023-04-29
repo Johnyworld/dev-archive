@@ -4,6 +4,8 @@ _2020년 10월 11일_
 
 #Tech #Tutorial 
 
+---
+
 [React, Typescript 환경에서 styled-components 적용하기](React,%20Typescript%20환경에서%20styled-components%20적용하기.md)에서 이어지는 글.
 
 ## ThemeProvider
