@@ -1,7 +1,9 @@
 import fs from "fs";
 import { Post } from "../../types";
 
-const getJsonFile: (filePath: string) => Promise<Post[]> = (filePath: string) =>
+export const getJsonFile: (filePath: string) => Promise<Post[]> = (
+  filePath: string
+) =>
   new Promise((resolve, reject) => {
     fs.readFile(filePath, "utf-8", (err, data) => {
       if (err) {
@@ -10,5 +12,3 @@ const getJsonFile: (filePath: string) => Promise<Post[]> = (filePath: string) =>
       resolve(JSON.parse(data));
     });
   });
-
-export default getJsonFile;

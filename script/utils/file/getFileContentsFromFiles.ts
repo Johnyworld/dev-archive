@@ -1,7 +1,7 @@
 import { FileContent } from "../../types";
-import getFileContent from "./getFileContent";
+import { getFileContent } from "./getFileContent";
 
-const getFileContentsFromFiles = async (
+export const getFileContentsFromFiles = async (
   fileNames: string[],
   generatePath: (fileName: string) => string
 ): Promise<FileContent[]> => {
@@ -11,5 +11,3 @@ const getFileContentsFromFiles = async (
     )
   ]);
 };
-
-export default getFileContentsFromFiles;

@@ -1,7 +1,7 @@
 import fs from "fs";
 import { FileContent } from "../../types";
 
-const getFileContent = (
+export const getFileContent = (
   fileName: string,
   filePath: string
 ): Promise<FileContent> =>
@@ -13,5 +13,3 @@ const getFileContent = (
       resolve({ fileName, fileContent });
     });
   });
-
-export default getFileContent;

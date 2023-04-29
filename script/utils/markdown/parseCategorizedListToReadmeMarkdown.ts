@@ -1,6 +1,6 @@
 import { CategorizedList, Markdown, Post } from "../../types";
 
-const parseCategorizedListToReadmeMarkdown = (
+export const parseCategorizedListToReadmeMarkdown = (
   list: CategorizedList
 ): Markdown => {
   return Object.keys(list)
@@ -22,5 +22,3 @@ const parsePostsToListOfMarkdown = (posts: Post[]) => {
 const parsePostToListItemOfMarkdown = (post: Post) => {
   return `- [${post.title}](${post.path.replace(/\s/g, "%20")})`;
 };
-
-export default parseCategorizedListToReadmeMarkdown;

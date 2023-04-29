@@ -1,1 +1,1 @@
-export { default as getArchivePath } from "./getArchivePath";
+export { getArchivePath } from "./getArchivePath";

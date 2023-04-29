@@ -5,7 +5,7 @@ const regTitle = /[#]{1}\s(.+)/;
 const regTags = /(#[A-Z])[A-Za-z]+/g;
 const regWrittenAt = /[\d]+년[\d\s]+월[\d\s]+일/g;
 
-const getPostsFromFileContents = async (
+export const getPostsFromFileContents = async (
   fileContents: FileContent[]
 ): Promise<Post[]> => {
   return fileContents
@@ -47,5 +47,3 @@ const parseFileContentToRawPost = ({
     writtenAt
   };
 };
-
-export default getPostsFromFileContents;

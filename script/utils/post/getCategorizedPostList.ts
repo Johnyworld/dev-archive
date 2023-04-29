@@ -1,6 +1,6 @@
 import { CategorizedList, Post } from "../../types";
 
-const getCategorizedPostList = (posts: Post[]): CategorizedList => {
+export const getCategorizedPostList = (posts: Post[]): CategorizedList => {
   const list: CategorizedList = {};
   posts.forEach((post) => {
     post.tags.forEach((tag: string) => {
@@ -13,5 +13,3 @@ const getCategorizedPostList = (posts: Post[]): CategorizedList => {
   });
   return list;
 };
-
-export default getCategorizedPostList;

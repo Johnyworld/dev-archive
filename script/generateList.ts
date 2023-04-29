@@ -2,11 +2,11 @@ import { GEN_FILE_NAME } from "./utils/constants";
 import { FileContent } from "./types";
 import {
   generateJsonFromPosts,
-  getArchivePath,
   getFileContentsFromFiles,
-  getFileNamesFromDirectory,
-  getPostsFromFileContents
-} from "./utils";
+  getFileNamesFromDirectory
+} from "./utils/file";
+import { getPostsFromFileContents } from "./utils/post";
+import { getArchivePath } from "./utils/archive";
 
 const main = async () => {
   const fileNames = await getFileNamesFromDirectory("archive");

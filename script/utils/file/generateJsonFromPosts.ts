@@ -7,12 +7,10 @@ const PRETTIER_CONFIG = {
   tabWidth: 2
 } as const;
 
-const generateJsonFromPosts = (posts: Post[], file: string) => {
+export const generateJsonFromPosts = (posts: Post[], file: string) => {
   fs.writeFileSync(
     file,
     prettier.format(JSON.stringify(posts), PRETTIER_CONFIG),
     "utf-8"
   );
 };
-
-export default generateJsonFromPosts;

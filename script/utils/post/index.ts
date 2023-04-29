@@ -1,2 +1,2 @@
-export { default as getCategorizedPostList } from "./getCategorizedPostList";
-export { default as getPostsFromFileContents } from "./getPostsFromFileContents";
+export { getCategorizedPostList } from "./getCategorizedPostList";
+export { getPostsFromFileContents } from "./getPostsFromFileContents";

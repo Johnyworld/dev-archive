@@ -1,11 +1,9 @@
 import fs from "fs";
 import { GEN_FILE_NAME, GEN_README_FILE_NAME } from "./utils/constants";
 import { Post } from "./types";
-import {
-  getCategorizedPostList,
-  getJsonFile,
-  parseCategorizedListToReadmeMarkdown
-} from "./utils";
+import { getJsonFile } from "./utils/file";
+import { parseCategorizedListToReadmeMarkdown } from "./utils/markdown";
+import { getCategorizedPostList } from "./utils/post";
 
 const welcome = `# 안녕하세요.
 

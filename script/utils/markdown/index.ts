@@ -1,1 +1,1 @@
-export { default as parseCategorizedListToReadmeMarkdown } from "./parseCategorizedListToReadmeMarkdown";
+export { parseCategorizedListToReadmeMarkdown } from "./parseCategorizedListToReadmeMarkdown";

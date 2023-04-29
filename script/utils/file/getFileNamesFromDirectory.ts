@@ -1,8 +1,8 @@
 import fs from "fs";
 
-const getFileNamesFromDirectory: (directory: string) => Promise<string[]> = (
+export const getFileNamesFromDirectory: (
   directory: string
-) =>
+) => Promise<string[]> = (directory: string) =>
   new Promise((revolve, reject) => {
     fs.readdir(directory, (err, data) => {
       if (err) {
@@ -11,5 +11,3 @@ const getFileNamesFromDirectory: (directory: string) => Promise<string[]> = (
       revolve(data);
     });
   });
-
-export default getFileNamesFromDirectory;
