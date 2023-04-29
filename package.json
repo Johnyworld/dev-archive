@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "gen": "ts-node script/generateList.ts"
+    "gen": "ts-node script/generateList.ts && ts-node script/generateReadme"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
