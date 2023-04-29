@@ -65,7 +65,9 @@ const main = async () => {
     ...fileNames.map((fileName) => getPostInfo(fileName))
   ]);
 
-  const posts: Post[] = list.filter((item): item is Post => item != null);
+  const posts: Post[] = list
+    .filter((item): item is Post => item != null)
+    .sort((a, b) => (a.writtenAt > b.writtenAt ? -1 : 1));
 
   fs.writeFileSync(
     GEN_FILE_NAME,
