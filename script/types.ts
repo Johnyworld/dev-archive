@@ -4,3 +4,9 @@ export interface Post {
   path: string;
   writtenAt: string;
 }
+
+export interface CategorizedList {
+  [tag: string]: Post[];
+}
+
+export type Markdown = string;
