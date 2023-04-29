@@ -1,5 +1,5 @@
 import { GEN_FILE_NAME } from "./utils/constants";
-import { FileContent, Post } from "./types";
+import { FileContent } from "./types";
 import {
   generateJsonFromPosts,
   getArchivePath,
