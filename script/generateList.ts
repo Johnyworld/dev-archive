@@ -1,7 +1,7 @@
 import fs from "fs";
 import prettier from "prettier";
 import { GEN_FILE_NAME } from "./utils/constants";
-import { Post } from "./types";
+import { Markdown, Post } from "./types";
 
 const regTitle = /[#]{1}\s(.+)/;
 const regTags = /(#[A-Z])[A-Za-z]+/g;
@@ -22,64 +22,86 @@ const getFileNames: () => Promise<string[]> = () =>
     });
   });
 
-const getPostInfo: (fileName: string) => Promise<Post | null> = (fileName) =>
+const getPath = (fileName: string) => `archive/${fileName}`;
+
+const getPostMarkdown = (fileName: string): Promise<Markdown> =>
   new Promise((resolve, reject) => {
-    const path = `archive/${fileName}`;
-    fs.readFile(path, "utf-8", (err, dataRaw: string) => {
+    const path = getPath(fileName);
+    fs.readFile(path, "utf-8", (err, data: string) => {
       if (err) {
         reject(err);
       }
-      const data = dataRaw.split("---")[0];
-      const title: string | null =
-        data?.match(regTitle)?.[0]?.replace("# ", "") || null;
-
-      const writtenAt = data.match(regWrittenAt)?.[0];
-
-      if (!writtenAt) {
-        console.warn("❌ ", fileName);
-        return resolve(null);
-      }
-
-      if (!title) {
-        console.warn("🚧 ", fileName);
-      } else {
-        console.log("➕ ", fileName);
-      }
-
-      const tags =
-        data.match(regTags)?.map((tag) => tag.replace("#", "")) || [];
-
-      resolve({
-        title: title || fileName.replace(".md", ""),
-        path,
-        tags,
-        writtenAt
-      });
+      resolve(data);
     });
   });
 
-const main = async () => {
-  const fileNames = await getFileNames();
+const parseMarkdownToPost = (
+  fileName: string,
+  markdown: Markdown
+): Post | null => {
+  const path = getPath(fileName);
+  const postMetaMarkdown = markdown.split("---")[0];
+  const title: string | null =
+    postMetaMarkdown?.match(regTitle)?.[0]?.replace("# ", "") || null;
+  const writtenAt = postMetaMarkdown.match(regWrittenAt)?.[0];
+  const tags =
+    postMetaMarkdown.match(regTags)?.map((tag) => tag.replace("#", "")) || [];
 
-  const list = await Promise.all([
-    ...fileNames.map((fileName) => getPostInfo(fileName))
-  ]);
+  if (!writtenAt) {
+    console.warn("❌ ", fileName);
+    return null;
+  }
+  if (!title) {
+    console.warn("🚧 ", fileName);
+  } else {
+    console.log("➕ ", fileName);
+  }
 
-  const posts: Post[] = list
-    .filter((item): item is Post => item != null)
+  return {
+    title: title || fileName.replace(".md", ""),
+    path,
+    tags,
+    writtenAt
+  };
+};
+
+const parseFileNameToPost = async (fileName: string): Promise<Post | null> => {
+  const markdown = await getPostMarkdown(fileName);
+  return parseMarkdownToPost(fileName, markdown);
+};
+
+const parseFileNamesToPost = async (fileNames: string[]): Promise<Post[]> => {
+  const posts = await Promise.all([...fileNames.map(parseFileNameToPost)]);
+  return posts
+    .filter(filterPostsHasNotWrittenAt)
     .sort((a, b) => (a.writtenAt > b.writtenAt ? -1 : 1));
+};
 
+const filterPostsHasNotWrittenAt = (post: Post | null): post is Post => {
+  return post != null;
+};
+
+const generateList = (posts: Post[]) => {
   fs.writeFileSync(
     GEN_FILE_NAME,
     prettier.format(JSON.stringify(posts), PRETTIER_CONFIG),
     "utf-8"
   );
+};
 
+const showLogs = () => {
   console.log("---");
   console.log("➕: 통과");
   console.log("🚧: 제목이 없습니다. 파일명으로 대체합니다.");
   console.log("❌: 날짜가 없습니다. 리스트에서 제외합니다.");
   console.log("---");
+};
+
+const main = async () => {
+  const fileNames = await getFileNames();
+  const posts = await parseFileNamesToPost(fileNames);
+  generateList(posts);
+  showLogs();
 };
 
 main();
