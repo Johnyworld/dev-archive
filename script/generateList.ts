@@ -25,10 +25,11 @@ const getFileNames: () => Promise<string[]> = () =>
 const getPostInfo: (fileName: string) => Promise<Post | null> = (fileName) =>
   new Promise((resolve, reject) => {
     const path = `archive/${fileName}`;
-    fs.readFile(path, "utf-8", (err, data: string) => {
+    fs.readFile(path, "utf-8", (err, dataRaw: string) => {
       if (err) {
         reject(err);
       }
+      const data = dataRaw.split("---")[0];
       const title: string | null =
         data?.match(regTitle)?.[0]?.replace("# ", "") || null;
 
