@@ -10,3 +10,8 @@ export interface CategorizedList {
 }
 
 export type Markdown = string;
+
+export interface FileContent {
+  fileName: string;
+  fileContent: string;
+}
