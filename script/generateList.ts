@@ -1,18 +1,11 @@
 import fs from "fs";
 import prettier from "prettier";
-
-interface Post {
-  title: string;
-  tags: string[];
-  path: string;
-  writtenAt: string;
-}
+import { GEN_FILE_NAME } from "./utils/constants";
+import { Post } from "./types";
 
 const regTitle = /[#]{1}\s(.+)/;
 const regTags = /(#[A-Z])[A-Za-z]+/g;
 const regWrittenAt = /[\d]+년[\d\s]+월[\d\s]+일/g;
-
-const GEN_FILE_NAME = "generatedList.json";
 
 const PRETTIER_CONFIG = {
   parser: "json",
