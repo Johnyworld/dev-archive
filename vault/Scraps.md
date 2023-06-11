@@ -5,6 +5,7 @@
 - https://news.hada.io/
 - https://yozm.wishket.com/magazine/list/design/
 - https://kofearticle.substack.com/
+- [Naver FE News](https://github.com/naver/fe-news/blob/master/README.md)
 
 ### React
 
@@ -114,6 +115,10 @@
 - [ ] [리뷰어에게 사랑받는 코드 리뷰는 어떻게 보낼 수 있을까? part 2](https://haneepark.github.io/2021/12/19/code-review-love-2/)
 - [ ] [코드리뷰 가이드](https://brunch.co.kr/@newnorm/126)
 
+### 클린 코드
+
+- [ ] [책 <읽기 좋은 코드가 좋은 코드다> 요약 - 가독성을 개선하는 방법](https://applecider2020.tistory.com/2)
+
 ### 배포
 
 - [ ] [배포 전략의 종류](https://reference-m1.tistory.com/211)
@@ -127,6 +132,10 @@
 - [ ] [토스 프론트엔드 챕터의 모든 것](https://tosspublic.notion.site/cc9367e44ff6424181899f3cf250f5d2#e6b1d26a88934da998176789ad030787)
 - [ ] [토스페이먼츠 프론트엔드 챕터](https://tosspayments-dev.oopy.io/chapters/frontend/about)
 - [ ] [소소로그](https://so-so.dev/)
+
+### 성능
+
+- [ ] [Performance insights: Get actionable insights on your website's performance](https://developer.chrome.com/docs/devtools/performance-insights/)
 
 ### 기타
 
