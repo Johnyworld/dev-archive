@@ -1,5 +1,5 @@
 import { FileContent, Post } from "../../types";
-import { getArchivePath } from "../archive";
+import { MD_FILES_PATH } from '../constants';
 
 const regTitle = /[#]{1}\s(.+)/;
 const regTags = /(#[A-Z])[A-Za-z]+/g;
@@ -22,7 +22,7 @@ const parseFileContentToRawPost = ({
   fileName,
   fileContent
 }: FileContent): Post | null => {
-  const path = getArchivePath(fileName);
+  const path = `${MD_FILES_PATH}/${fileName}`;
   const postMetaMarkdown = fileContent.split("---")[0];
   const title: string | null =
     postMetaMarkdown?.match(regTitle)?.[0]?.replace("# ", "") || null;

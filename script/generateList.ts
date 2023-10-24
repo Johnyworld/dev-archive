@@ -1,4 +1,4 @@
-import { GEN_FILE_NAME } from "./utils/constants";
+import { GEN_FILE_NAME, MD_FILES_PATH } from "./utils/constants";
 import { FileContent } from "./types";
 import {
   generateJsonFromPosts,
@@ -6,13 +6,12 @@ import {
   getFileNamesFromDirectory
 } from "./utils/file";
 import { getPostsFromFileContents } from "./utils/post";
-import { getArchivePath } from "./utils/archive";
 
 const main = async () => {
   const fileNames = await getFileNamesFromDirectory("archive");
   const fileContents: FileContent[] = await getFileContentsFromFiles(
     fileNames,
-    getArchivePath
+    fileName => `${MD_FILES_PATH}/${fileName}`
   );
   const posts = await getPostsFromFileContents(fileContents);
   generateJsonFromPosts(posts, GEN_FILE_NAME);
