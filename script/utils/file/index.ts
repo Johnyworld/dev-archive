@@ -1,5 +1,4 @@
 export { generateJsonFromPosts } from "./generateJsonFromPosts";
-export { getFileContent } from "./getFileContent";
-export { getFileContentsFromFiles } from "./getFileContentsFromFiles";
+export { getMDFilesData } from "./getMDFilesData";
 export { getFileNamesFromDirectory } from "./getFileNamesFromDirectory";
 export { getJsonFile } from "./getJsonFile";
