@@ -8,7 +8,6 @@
 
 ### Error
 
-- [Clean Code](vault/tech/Clean%20Code.md)
 - [Don't over useState](vault/tech/Don't%20over%20useState.md)
 
 \_
@@ -16,10 +15,4 @@
 ### Study
 
 - [CORS](vault/tech/CORS.md)
-- [Clean Code](vault/tech/Clean%20Code.md)
-
-\_
-
-### Tech
-
 - [Clean Code](vault/tech/Clean%20Code.md)
