@@ -1,3 +1,0 @@
-# OTP
-
-One Time Password
