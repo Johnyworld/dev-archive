@@ -1,2 +1,2 @@
 export { getCategorizedPostList } from "./getCategorizedPostList";
-export { getPostsFromFileContents } from "./getPostsFromFileContents";
+export { parseMDFilesDataToPosts } from "./parseMDFilesDataToPosts";

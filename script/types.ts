@@ -2,7 +2,7 @@ export interface Post {
   title: string;
   tags: string[];
   path: string;
-  writtenAt: string;
+  createdAt: string;
 }
 
 export interface CategorizedList {
