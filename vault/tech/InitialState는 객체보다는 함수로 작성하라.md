@@ -1,0 +1,1 @@
+https://www.perssondennis.com/articles/react-anti-patterns-and-best-practices-dos-and-donts#user-content-write-initial-states-as-functions-rather-than-objects

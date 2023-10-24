@@ -1,9 +1,8 @@
-# CORS
-
-_2022년 3월 3일_
-
-#Tech #Study
-
+---
+tags:
+  - Study
+Created: 2023-03-03
+---
 ## CORS의 개념
 
 CORS는 Cross Origin Resource Sharing의 약자로, **서로 다른 Origin끼리 자원을 공유할 수 있게 하는 정책**을 말합니다. 그렇다면 Origin은 무엇일까요?

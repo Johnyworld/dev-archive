@@ -1,6 +1,4 @@
-# useEventCallback
-
-#Snippets
+#Snippet
 
 ```jsx
 const useEventCallback = function (fn) {

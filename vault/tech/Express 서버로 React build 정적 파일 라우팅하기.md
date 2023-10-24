@@ -1,5 +1,3 @@
-# Express 서버로 React build 정적 파일 라우팅하기
-
 _2020년 10월 7일_
 
 #Tech #Tutorial

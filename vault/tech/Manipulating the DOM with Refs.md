@@ -1,4 +1,4 @@
-# Manipulating the DOM with Refs
+#Tech #Translates
 
 Refs로 DOM 조작하기
 

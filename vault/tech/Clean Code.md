@@ -1,8 +1,13 @@
-_2022년 1월 28일_ 
-
-#BookReview
-
 ---
+Created: 2023-02-22
+tags:
+  - Error
+  - Study
+  - Tech
+---
+
+
+#Tech #BookReview 
 
 저자: 로버트 C. 마틴
 

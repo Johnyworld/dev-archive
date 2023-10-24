@@ -1,5 +1,3 @@
-# Exported variable ... but cannot be named
-
 2023년 5월 24일
 
 #Error

@@ -1,4 +1,10 @@
-# forwardRef와 Object.assign
+#Tech
+
+```info
+createdAt: 2021-12-20
+```
+
+---
 
 ```jsx
 function FooComponent() {

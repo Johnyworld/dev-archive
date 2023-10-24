@@ -1,4 +1,4 @@
-# Synchronizing with Effects
+#Translates 
 
 > 번역 진행중인 문서입니다.
 
