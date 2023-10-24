@@ -1,10 +1,10 @@
 import fs from "fs";
-import { FileContent } from "../../types";
+import { MDFileData } from "../../types";
 
 export const getFileContent = (
   fileName: string,
   filePath: string
-): Promise<FileContent> =>
+): Promise<MDFileData> =>
   new Promise((resolve, reject) => {
     fs.readFile(filePath, "utf-8", (err, fileContent) => {
       if (err) {

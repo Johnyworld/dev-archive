@@ -1,4 +1,4 @@
-import { FileContent, Post } from "../../types";
+import { MDFileData, Post } from "../../types";
 import { MD_FILES_PATH } from '../constants';
 
 const regTitle = /[#]{1}\s(.+)/;
@@ -6,7 +6,7 @@ const regTags = /(#[A-Z])[A-Za-z]+/g;
 const regWrittenAt = /[\d]+년[\d\s]+월[\d\s]+일/g;
 
 export const getPostsFromFileContents = async (
-  fileContents: FileContent[]
+  fileContents: MDFileData[]
 ): Promise<Post[]> => {
   return fileContents
     .map(parseFileContentToRawPost)
@@ -21,7 +21,7 @@ const filterPostsHasNotWrittenAt = (post: Post | null): post is Post => {
 const parseFileContentToRawPost = ({
   fileName,
   fileContent
-}: FileContent): Post | null => {
+}: MDFileData): Post | null => {
   const path = `${MD_FILES_PATH}/${fileName}`;
   const postMetaMarkdown = fileContent.split("---")[0];
   const title: string | null =

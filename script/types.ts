@@ -11,7 +11,7 @@ export interface CategorizedList {
 
 export type Markdown = string;
 
-export interface FileContent {
+export interface MDFileData {
   fileName: string;
   fileContent: string;
 }

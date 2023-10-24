@@ -1,5 +1,5 @@
 import { GEN_FILE_NAME, MD_FILES_PATH } from "./utils/constants";
-import { FileContent } from "./types";
+import { MDFileData } from "./types";
 import {
   generateJsonFromPosts,
   getFileContentsFromFiles,
@@ -9,7 +9,7 @@ import { getPostsFromFileContents } from "./utils/post";
 
 const main = async () => {
   const fileNames = await getFileNamesFromDirectory("archive");
-  const fileContents: FileContent[] = await getFileContentsFromFiles(
+  const fileContents: MDFileData[] = await getFileContentsFromFiles(
     fileNames,
     fileName => `${MD_FILES_PATH}/${fileName}`
   );
