@@ -1,9 +1,8 @@
-# django 프로젝트에 ServiceWorker 파일 경로
-
-_2021년 6월 11일_
-
-#Tech #Tips
-
+---
+Created: 2021-06-11
+tags:
+  - 팁
+---
 django에 ServiceWorker를 등록하는 과정에서 `sw.js` 파일의 경로를 설정하는 부분에서 꽤나 애를 먹었다. `sw.js`파일은 `example.com/sw.js` 위치에 존재해야 하는데 django는 `example.com/static/sw.js` 로 정적 파일을 제공하기 때문에 경로가 맞지 않아 서비스 워커를 등록할 수가 없었다.
 
 처음에는 프론트엔드 빌더로 사용중인 parcel 문제인줄 알고 프론트엔드쪽에서 여러 시도를 해보았지만 아무것도 해결되지 않았다.

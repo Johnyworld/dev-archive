@@ -1,9 +1,8 @@
-# Github SSH 접속시 Operation Timeout 문제
-
-_2021년 7월 16일_
-
-#Tech #Tips 
-
+---
+Created: 2021-07-16
+tags:
+  - 팁
+---
 ## 📛 문제 발견
 
 Github 연결을 Password 방식으로 하고있다가, 더 이상 Password 방식을 지원하지 않는다고 들어서 SSH 연결로 바꾸게 되었다.

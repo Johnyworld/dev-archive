@@ -1,8 +1,3 @@
----
-Created: 2023-01-01
-tags:
-  - Error
----
 https://tkdodo.eu/blog/dont-over-use-state
 
 `useState`는 React에서 제공하는 모든 hook 중 가장 기본적인 것으로 간주됩니다. 또한 `useEffect`와 함께 가장 많이 사용합니다. (ㄹㅇ).

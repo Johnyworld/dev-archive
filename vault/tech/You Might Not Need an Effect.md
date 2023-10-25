@@ -1,5 +1,8 @@
-# You Might Not Need an Effect
-
+---
+Created: 2023-01-30
+tags:
+  - 번역
+---
 https://beta.reactjs.org/learn/you-might-not-need-an-effect
 
 Effects는 React 패러다임으로부터의 탈출구이다. 그것들은 너를 리액트와 리액트가 아닌 외부 시스템과 싱크된 컴포넌트나 브라우저 DOM에서 한발짝 뒤로 물러나게 한다. 만약 외부 시스템과 관련이 없다면 (예를 들어 어떠한 props 나 state 가 변했을 때 탐포넌트의 state를 업데이트 하고 싶다면) 당신은 Effect가 필요하지 않다. 필요 없는 Effect를 삭제한다면 코드가 읽기 쉬워지고 실행이 빨라지며 에러가 줄어든다.

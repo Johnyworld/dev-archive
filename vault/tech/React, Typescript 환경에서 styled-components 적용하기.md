@@ -1,9 +1,8 @@
-# React, Typescript 환경에서 styled-components 적용하기
-
-_2020년 10월 9일_
-
-#Tech #Tutorial
-
+---
+Created: 2020-10-09
+tags:
+  - 튜토리얼
+---
 styled-components 를 많은 프로젝트에 적용해보았지만 이제서야 정리해본다.
 
 ## 설치

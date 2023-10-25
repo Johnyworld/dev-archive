@@ -1,11 +1,8 @@
-# Styled Components 로 Dark Mode 구현하기
-
-_2020년 10월 11일_
-
-#Tech #Tutorial 
-
 ---
-
+Created: 2020-10-11
+tags:
+  - 튜토리얼
+---
 [React, Typescript 환경에서 styled-components 적용하기](React,%20Typescript%20환경에서%20styled-components%20적용하기.md)에서 이어지는 글.
 
 ## ThemeProvider

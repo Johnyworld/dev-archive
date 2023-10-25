@@ -1,9 +1,8 @@
-# Event Flow (Capturing, Bubbling, Delegation)
-
-_2022년 3월 3일_
-
-#Tech #Study 
-
+---
+Created: 2022-03-03
+tags:
+  - 연구
+---
 ## 이벤트 흐름의 순서
 
 이벤트는 기본적으로 3단계 순서로 흐릅니다.

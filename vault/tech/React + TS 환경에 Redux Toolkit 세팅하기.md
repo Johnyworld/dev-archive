@@ -1,9 +1,8 @@
-# React + TS 환경에 Redux Toolkit 세팅하기
-
-_2020년 10월 16일_
-
-#Tech #Tutorial 
-
+---
+Created: 2020-10-16
+tags:
+  - 튜토리얼
+---
 ## 서론
 
 ### 프로젝트에서 MobX를 사용했었다.

@@ -1,9 +1,8 @@
-# 리액트와 Atomic Design System에 대하여
-
-_2021년 8월 21일_
-
-#Tech #Study 
-  
+---
+Created: 2021-08-21
+tags:
+  - 연구
+---
 ![post-thumbnail](https://velog.velcdn.com/images/johnyworld/post/49d0c59a-75e9-4efe-91e8-3ab6c8ad63d1/atomic-design-process.png)
 
 ## 🧑🏻‍💻 서론

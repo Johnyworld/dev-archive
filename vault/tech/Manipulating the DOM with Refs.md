@@ -1,5 +1,7 @@
-#Tech #Translates
-
+---
+tags:
+  - 번역
+---
 Refs로 DOM 조작하기
 
 리액트는 렌더 결과를 보여주기 위해 자동으로 [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction)을 업데이트 한다, 그래서 컴포넌트는 돔을 자주 조작할 필요가 없다. 하지만, 종종 리액트에서 DOM 에 접근해야 할 수 있다. 예를 들어 노드를 포커스하기, 노드로 스크롤하기, 아니면 노드의 사이즈나 위치를 재는 것. 리액트에는 이것들을 하기 위해 제공되는 방법이 없다. 그래서 DOM 노드 에 대한 `ref` 가 필요하다.

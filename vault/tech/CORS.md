@@ -1,7 +1,7 @@
 ---
-Created: 2023-03-03
+Created: 2022-03-03
 tags:
-  - Study
+  - 개념정리
 ---
 ## CORS의 개념
 
