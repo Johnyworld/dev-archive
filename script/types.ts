@@ -3,6 +3,7 @@ export interface Post {
   tags: string[];
   path: string;
   createdAt: string;
+  modifiedAt: string;
 }
 
 export interface CategorizedList {
