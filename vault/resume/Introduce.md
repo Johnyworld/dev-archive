@@ -8,7 +8,7 @@ https://flex.team
 
 flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결하는 B2B HR SaaS 입니다. flex 에서 근무하는 동안 저는 가장 많은 유저들이 사용하는 타임트래킹 제품을 개발, 운영하였습니다. 타임트래킹 제품은 구성원 평가의 근거가 되는 근무, 휴가와 같은 근태관리에 대한 문제를 해결합니다.
 
-또한 동료들이 더 편하게 일할 수 있게 아래 공통 패키지들을 개발하고 담당했습니다.
+또한 동료들이 더 편하게 일할 수 있게 아래 공통 패키지들을 개발하고 담당했습니다.
 
 - 사용자 이벤트 로깅 사내 패키지 2.0 버전 개발
 - 날짜, 시간 포맷터 패키지 개발, 모든 케이스에 대한 테스트 코드 작성
@@ -83,11 +83,10 @@ Django(python), Express(node.js) 등을 사용하여 개인 프로젝트를 진�
 
 ## Contact
 
-- Mobile - 010-4806-3340
-- Email - johnyworld@naver.com
+- Mobile : 010-4806-3340
+- Email : johnyworld@naver.com
 
 ## Channel
 
-- Github - https://github.com/Johnyworld
-- Resume - https://johnyworld.github.io/resume
-- Velog - https://velog.io/@johnyworld
+- Github : https://github.com/Johnyworld
+- Velog : https://velog.io/@johnyworld
