@@ -19,6 +19,12 @@
 
 \_
 
+### 버그
+
+- [Next JS 스타일 번들 중복 이슈](vault/tech/Next%20JS%20스타일%20번들%20중복%20이슈.md)
+
+\_
+
 ### 번역
 
 - [Referencing Values with Refs](vault/tech/Referencing%20Values%20with%20Refs.md)
@@ -54,6 +60,12 @@
 
 \_
 
+### 코드조각
+
+- [css module 로 생성되는 classname 의 prefix 를 바꿔보자](vault/tech/css%20module%20로%20생성되는%20classname%20의%20prefix%20를%20바꿔보자.md)
+
+\_
+
 ### 튜토리얼
 
 - [EC2 생성 후 Django 환경 세팅하기](vault/tech/EC2%20생성%20후%20Django%20환경%20세팅하기.md)
@@ -68,7 +80,8 @@
 
 ### 팁
 
+- [css module 사용시 타이핑 하는 방법](vault/tech/css%20module%20사용시%20타이핑%20하는%20방법.md)
 - [Github SSH 접속시 Operation Timeout 문제](vault/tech/Github%20SSH%20접속시%20Operation%20Timeout%20문제.md)
-- [django 프로젝트에 ServiceWorker 파일 경로](vault/tech/django%20프로젝트에%20ServiceWorker%20파일%20경로.md)
 - [ec2에 ssh 접속시 timeout 문제 해결](vault/tech/ec2에%20ssh%20접속시%20timeout%20문제%20해결.md)
+- [django 프로젝트에 ServiceWorker 파일 경로](vault/tech/django%20프로젝트에%20ServiceWorker%20파일%20경로.md)
 - [VSCODE 에서 한글로 된 부분만 검색하기](vault/tech/VSCODE%20에서%20한글로%20된%20부분만%20검색하기.md)

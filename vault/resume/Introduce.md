@@ -88,5 +88,6 @@ Django(python), Express(node.js) 등을 사용하여 개인 프로젝트를 진�
 
 ## Channel
 
+- LinkedIn: https://www.linkedin.com/in/fe-johnykim/
 - Github : https://github.com/Johnyworld
 - Velog : https://velog.io/@johnyworld
