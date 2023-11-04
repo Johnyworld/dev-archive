@@ -70,7 +70,7 @@
 
 - [EC2 생성 후 Django 환경 세팅하기](vault/tech/EC2%20생성%20후%20Django%20환경%20세팅하기.md)
 - [React i18next lazy loading](vault/tech/React%20i18next%20lazy%20loading.md)
-- [React + TS 환경에 Redux Toolkit 세팅하기](vault/tech/React%20+%20TS%20환경에%20Redux%20Toolkit%20세팅하기.md)
+- [React, TS 환경에 Redux Toolkit 세팅하기](vault/tech/React,%20TS%20환경에%20Redux%20Toolkit%20세팅하기.md)
 - [Styled Components 로 Dark Mode 구현하기](vault/tech/Styled%20Components%20로%20Dark%20Mode%20구현하기.md)
 - [React, Typescript 환경에서 styled-components 적용하기](vault/tech/React,%20Typescript%20환경에서%20styled-components%20적용하기.md)
 - [React, Typescript 환경에서 다국어 (i18next) 세팅하기](vault/tech/React,%20Typescript%20환경에서%20다국어%20(i18next)%20세팅하기.md)
@@ -82,6 +82,6 @@
 
 - [css module 사용시 타이핑 하는 방법](vault/tech/css%20module%20사용시%20타이핑%20하는%20방법.md)
 - [Github SSH 접속시 Operation Timeout 문제](vault/tech/Github%20SSH%20접속시%20Operation%20Timeout%20문제.md)
-- [ec2에 ssh 접속시 timeout 문제 해결](vault/tech/ec2에%20ssh%20접속시%20timeout%20문제%20해결.md)
 - [django 프로젝트에 ServiceWorker 파일 경로](vault/tech/django%20프로젝트에%20ServiceWorker%20파일%20경로.md)
+- [ec2에 ssh 접속시 timeout 문제 해결](vault/tech/ec2에%20ssh%20접속시%20timeout%20문제%20해결.md)
 - [VSCODE 에서 한글로 된 부분만 검색하기](vault/tech/VSCODE%20에서%20한글로%20된%20부분만%20검색하기.md)

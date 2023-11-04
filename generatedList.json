@@ -154,17 +154,17 @@
     "tags": ["팁"]
   },
   {
-    "title": "ec2에 ssh 접속시 timeout 문제 해결",
-    "path": "vault/tech/ec2에 ssh 접속시 timeout 문제 해결.md",
-    "createdAt": "2021-06-11",
-    "modifiedAt": "2023-10-25T04:00:58.568Z",
-    "tags": ["팁"]
-  },
-  {
     "title": "django 프로젝트에 ServiceWorker 파일 경로",
     "path": "vault/tech/django 프로젝트에 ServiceWorker 파일 경로.md",
     "createdAt": "2021-06-11",
     "modifiedAt": "2023-10-25T04:33:54.958Z",
+    "tags": ["팁"]
+  },
+  {
+    "title": "ec2에 ssh 접속시 timeout 문제 해결",
+    "path": "vault/tech/ec2에 ssh 접속시 timeout 문제 해결.md",
+    "createdAt": "2021-06-11",
+    "modifiedAt": "2023-10-25T04:00:58.568Z",
     "tags": ["팁"]
   },
   {
@@ -182,8 +182,8 @@
     "tags": ["튜토리얼"]
   },
   {
-    "title": "React + TS 환경에 Redux Toolkit 세팅하기",
-    "path": "vault/tech/React + TS 환경에 Redux Toolkit 세팅하기.md",
+    "title": "React, TS 환경에 Redux Toolkit 세팅하기",
+    "path": "vault/tech/React, TS 환경에 Redux Toolkit 세팅하기.md",
     "createdAt": "2020-10-16",
     "modifiedAt": "2023-10-25T04:21:31.273Z",
     "tags": ["튜토리얼"]
