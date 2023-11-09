@@ -1,10 +1,6 @@
-
-
-_2023년 3월 30일_
-
+2023-03-30
 
 어느덧 flex에 입사한지 1년이 됐다. 1년 동안 나는 어떻게 일했고 어떻게 성장했는지 그리고 무엇을 느꼈고 무엇을 배웠는지 회고해보고자 한다.
-
 
 ### 이 회사에 합류하다
 
@@ -49,3 +45,70 @@ flex에 입사하니
 flex 팀은 소수정예의 팀을 추구한다. 업계에도 면접에 합격하는게 참 어렵다는 소문이 있다고 들었다. 
 
 ### 다음 스텝
+
+```ts
+// next.config.js
+
+const path = require('path');
+const isProduction = process.env.NODE_ENV === 'production';
+
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'src/style')],
+  },
+  webpack: config => {
+    console.log('rules', config.module.rules);
+    const oneOf = config.module.rules.find(rule => typeof rule.oneOf === 'object');
+    console.log('oneOf', oneOf);
+
+    if (oneOf) {
+      // Find the module which targets *.scss|*.sass files
+      const moduleSassRule = oneOf.oneOf.find(rule => regexEqual(rule.test, /\.module\.(scss|sass)$/));
+
+      if (moduleSassRule) {
+        // Get the config object for css-loader plugin
+        const cssLoader = moduleSassRule.use.find(({ loader }) => loader.includes('/css-loader/'));
+        if (cssLoader) {
+          cssLoader.options = {
+            ...cssLoader.options,
+            modules: cssLoaderOptions(cssLoader.options.modules),
+          };
+        }
+      }
+    }
+
+    return config;
+  },
+};
+
+const regexEqual = (x, y) => {
+  return (
+    x instanceof RegExp &&
+    y instanceof RegExp &&
+    x.source === y.source &&
+    x.global === y.global &&
+    x.ignoreCase === y.ignoreCase &&
+    x.multiline === y.multiline
+  );
+};
+
+// css-loader 플러그인 덮어쓰기
+function cssLoaderOptions(modules) {
+  const { getLocalIdent, ...others } = modules;
+  return {
+    getLocalIdent: (context, _, exportName, options) => {
+      const localIndent = getLocalIdent(context, _, exportName, options);
+      const hash = localIndent.split('_').pop();
+      const name = isProduction ? encodeBase64WithOnlyAlphabets(exportName) : exportName;
+      const customIndent = name + '_' + hash;
+      return customIndent;
+    },
+    ...others,
+  };
+}
+
+const encodeBase64WithOnlyAlphabets = str => {
+  const base64 = Buffer.from(str, 'utf8').toString('base64');
+  return base64.replace(/\W/g, '');
+};
+```
