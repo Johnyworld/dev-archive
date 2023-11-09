@@ -9,3 +9,7 @@
 ## 스펙
 
 - Javascript
+
+## 화면
+
+![thumbnail](https://johnyworld2019.s3.ap-northeast-2.amazonaws.com/images/resume/bangcards.png)
