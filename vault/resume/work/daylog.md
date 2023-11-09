@@ -1,6 +1,6 @@
 > 현재는 서비스 중지중입니다.
 
-# 스펙
+## 스펙
 
 - React
 - GraphQL, Apollo
