@@ -1,5 +1,6 @@
+
 ```dataview
 TABLE Created, file.etags
 FROM "tech"
-SORT Created desc, tags
+SORT tags desc, Created desc
 ```

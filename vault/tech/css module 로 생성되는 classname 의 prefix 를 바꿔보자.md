@@ -1,7 +1,7 @@
 ---
 Created: 2023-10-27
 tags:
-  - 코드조각
+  - 문제해결
 ---
 Next (@^13) 에서 css module 을 사용하다보니, `.SomeComponent_someClassName__hash` 이런 이름으로 생성되는 클래스 이름이 마음에 들지 않았다.
 
