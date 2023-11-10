@@ -1,11 +1,15 @@
-## Experience
+# 사용자 중심,<br><sub>웹 프론트엔드 엔지니어 김재환</sub>
+
+## Introduce
 
 **4년 차 프론트엔드 개발자**로서 주로 웹 서비스의 개발, 운영을 담당하고 있습니다.
 초기 멤버로 스타트업에 합류하여 서비스가 MAU 30,000을 달성하고 TIPS 프로그램에 선정되는 성장을 하는 동안 서비스의 프론트엔드 개발을 주도 하였던 경험이 있습니다.
 
 5년의 디자이너 경력이 있으며 여전히 좋은 UX/UI 에 대한 관심이 있습니다. 좋은 UX란, 거슬리는 게 없는 것. 이라고 생각합니다.
 
-### 플렉스 (flex)
+## Experience
+
+### 🏢 플렉스 (flex)
 
 **2022. 04. - 2023. 10.** - Frontend Engineer
 
@@ -41,7 +45,7 @@ flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결�
 - 개발 가이드 문서 제공
 - Jest 를 사용하여 Test Driven Development
 
-### 언디파인드 (Undefined)
+### 🏢 언디파인드 (Undefined)
 
 **2021. 02 - 2023. 01** - Frontend Developer
 
@@ -71,31 +75,23 @@ iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 
 
 ## Skills
 
-**React(next)** 와 **Typescript** 를 중심으로 커리어를 쌓아 왔습니다. 자주 사용했던 라이브러리는 아래와 같습니다.
-
-- Tanstack Query, Redux Toolkit, MobX
-- Radix, Sementic UI, Antd
-- Storybook, Stitches, React Hook Form, Date FNS, Lodash
-
-**AWS**
-개인 프로젝트를 하면서 AWS 를 다뤄보았습니다. EC2, Route53 으로 서버와 도메인을 관리하고 데이터베이스는 RDS로 서비스하였습니다. 사용자가 업로드하는 파일은 S3 에 저장했습니다.
-
-**Backend**
-Django(python), Express(node.js) 등을 사용하여 개인 프로젝트를 진행한 경험이 있습니다. 기본적인 API 개발 정도는 할 줄 아는 편입니다. DB 는 MySQL과 mongoDB 를 사용했습니다.
-
-**UI/UX**
-개발자로 전직하기 전, 웹과 GUI 디자이너로 약 5년간 근무했습니다. 디자인을 손 놓은지 시간이 꽤 지났지만, 여전히 좋은 UX에 대한 관심이 있습니다.
+| Part | Skills |
+|---|---|
+| Frontend | - **React(next), Typescript<br>**- Tanstack Query, Redux Toolkit, MobX<br>- Radix, Sementic UI, Antd<br>- Canvas<br>- 반응형 웹 디자인<br> |
+| Backend | - Node(Express) |
+| AWS | - EC2, Route53, RDS(MySQL), S3 |
+| UX/UI | - 5년간의 웹/UI 디자이너 경력 |
 
 ## Non Technical
 
-### 이렇게 일합니다.
+#### 이렇게 일합니다.
 
 - 어떻게 하면 더 잘 일할 수 있을지 고민하며 도전하며 실패하며 다시 도전합니다.
 - 빠른 의사소통을 위해 동료들의 질문이나 도움 요청, 코드 리뷰 등을 항상 높은 우선 순위에 두려고 노력합니다.
 - UI 개발 할 때 가장 즐거움을 느낍니다.
 - 동료들과 본인의 성장을 위한 코드리뷰 문화를 선호합니다.
 
-### 이런 회사/동료들과 함께 일하고 싶습니다.
+#### 이런 회사/동료들과 함께 일하고 싶습니다.
 
 - 다른 구성원의 의견에 귀를 기울이는 동료들
 - 다른 구성원이 일을 잘 해낼 수 있게 적극 도와주는 동료들
@@ -103,14 +99,14 @@ Django(python), Express(node.js) 등을 사용하여 개인 프로젝트를 진�
 - 모르는 것을 부끄러워하지 않는 동료들
 - 일을 잘 하기 위해, 내가 가진 지식을 아끼지 않고 서로 공유하는 동료들
 
-### 이런 것들을 고민하고 있습니다.
+#### 이런 것들을 고민하고 있습니다.
 
 - 동료 개발자들이 사용하기 쉬운 디자인시스템은 어떤 모습일까?
 - 함수형 패러다임 처럼, 작은 컴포넌트들을 조합하여 다양한 것들을 구현할 수 있지 않을까?
 - SRP를 지키기 위해 Presentational 컴포넌트는 여전히 필요하지 않을까?
 - 어떻게 하면 적은 커뮤니케이션 비용으로 내 의견이나 정보를 쉽게 전달할 수 있을까?
 
-### 사용했던 협업 툴은 이렇습니다.
+#### 사용했던 협업 툴은 이렇습니다.
 
 - Notion
 - Slack
@@ -119,7 +115,7 @@ Django(python), Express(node.js) 등을 사용하여 개인 프로젝트를 진�
 - Jira
 - Miro
 
-### 그 밖의 경험
+## Other experience
 
 - GUI, 웹 디자이너로 약 5년 근무
 - 인덕대학교 시각디자인과 4.1 학점으로 졸업
@@ -130,9 +126,6 @@ Django(python), Express(node.js) 등을 사용하여 개인 프로젝트를 진�
 
 - Mobile : 010-4806-3340
 - Email : johnyworld@naver.com
-
-## Channel
-
 - LinkedIn: https://www.linkedin.com/in/fe-johnykim/
 - Github : https://github.com/Johnyworld
 - Velog : https://velog.io/@johnyworld
