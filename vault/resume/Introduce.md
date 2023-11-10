@@ -129,3 +129,36 @@ iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 
 - LinkedIn: https://www.linkedin.com/in/fe-johnykim/
 - Github : https://github.com/Johnyworld
 - Velog : https://velog.io/@johnyworld
+
+<div class='cv_profile_L9T3v'>
+![](https://johnyworld2019.s3.ap-northeast-2.amazonaws.com/images/resume/me-1.png)
+</div>
+
+<style>
+div.cv_profile_L9T3v {
+  position: absolute;
+  top: 106px;
+  right: 16px;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  overflow: hidden;
+  margin: 0;
+  filter: grayscale(1);
+}
+
+div.cv_profile_L9T3v img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 566px) {
+  div.cv_profile_L9T3v  {
+    width: 70px;
+    height: 70px;
+    z-index: -1;
+	opacity: 0.8;
+  }
+}
+</style>
