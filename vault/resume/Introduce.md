@@ -108,7 +108,7 @@ iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 
 
 #### 사용했던 협업 툴은 이렇습니다.
 
-- Notion
+- Notion
 - Slack
 - Figma
 - Linear
