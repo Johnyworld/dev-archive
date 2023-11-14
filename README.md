@@ -44,6 +44,7 @@
 
 ### 에세이
 
+- [늦었지만 tailwind CSS 를 써봤다](vault/tech/늦었지만%20tailwind%20CSS%20를%20써봤다.md)
 - [React와 Modal](vault/tech/React와%20Modal.md)
 - [문서 주도 개발](vault/tech/문서%20주도%20개발.md)
 - [삽질의 중요성](vault/tech/삽질의%20중요성.md)

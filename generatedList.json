@@ -1,5 +1,12 @@
 [
   {
+    "title": "늦었지만 tailwind CSS 를 써봤다",
+    "path": "vault/tech/늦었지만 tailwind CSS 를 써봤다.md",
+    "createdAt": "2023-11-14",
+    "modifiedAt": "2023-11-14T12:29:25.957Z",
+    "tags": ["에세이"]
+  },
+  {
     "title": "css module 로 생성되는 classname 의 prefix 를 바꿔보자",
     "path": "vault/tech/css module 로 생성되는 classname 의 prefix 를 바꿔보자.md",
     "createdAt": "2023-10-27",
