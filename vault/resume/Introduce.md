@@ -50,6 +50,7 @@ flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결�
 **2021. 02 - 2023. 01** - Frontend Developer
 
 iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 시작 된 **B2B SaaS 대회 운영 플랫폼** 입니다. 초기 멤버로서 프론트엔드 전반적인 부분을 주도 했으며 제품 기획에도 참여하였습니다. 게임 BJ, 대형 스크럼 팀, 게임 개발사와의 협업, 국내 지역 이스포츠 행사 등을 통해 서비스는 천천히 성장했고 여러 국가에 걸쳐 **MAU 30,000** 을 달성하였습니다.
+
 #### 사용 기술
 
 - React, Typescript
@@ -66,6 +67,7 @@ iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 
 - DX 개선을 위한 리팩토링
 	- depth 가 깊어 로직을 찾기 힘들던 구조를 개선
 	- SRP를 반영하기 위해 뷰와 기능을 완전히 분리
+- 반응형 웹 디자인
 
 #### 사내 UI 라이브러리(React) 개발
 
@@ -73,23 +75,44 @@ iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 
 - NPM 패키지로 배포
 - Storybook 문서화
 
+### 🧑🏻‍💻 가계부 서비스: 틈씀이
+
+개인 프로젝트
+
+https://johnykim.me/work/tumssum
+
+오랜시간 써 온 가계부를 더 편리하게 쓰기 위해 공부도 할 겸 만들어 본 프로젝트입니다. 최소 기능으로 먼저 배포하여 9개월 넘게 직접 사용하며 테스트 했습니다. 달력, 보드 등에서 드래그 앤 드롭으로 쉽게 관리할 수 있습니다.
+
+[스토리북 주도 개발(SDD)](https://johnykim.me/post/%EB%AC%B8%EC%84%9C%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C#%F0%9F%93%98%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B6%81%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C)과 TDD를 철저하게 지키며 작업했습니다. 스토리북 주도 개발이란 UI를 개발할 때 스토리북 서버만 켜두고 하는 것입니다. 강제적인 관심사 분리로 비즈니스 로직을 신경쓰지 않을 수 있어서 좋았습니다. 컴포넌트 하나당 `index.ts, X.tsx, X.test.tsx, X.stories.tsx, X.scss` 이렇게 다섯개의 파일이 필요했습니다.
+
+#### 사용 기술
+
+- React, Django(Python), Redux toolkit, SCSS
+- Storybook, React testing library, Jest
+- Email authentication (JWT token)
+- OAuth2 : Kakao, Google
+- AWS : EC2, RDS(MySQL)
+- [관계형 데이터](https://drawsql.app/teams/johnyworld/diagrams/tumssum) 설계
+- 반응형 웹 디자인
+
 ## Skills
 
-| Part | Skills |
-|---|---|
-| Frontend | - **React(next), Typescript<br>**- Tanstack Query, Redux Toolkit, MobX<br>- Radix, Sementic UI, Antd<br>- Canvas<br>- 반응형 웹 디자인<br> |
-| Backend | - Node(Express) |
-| AWS | - EC2, Route53, RDS(MySQL), S3 |
-| UX/UI | - 5년간의 웹/UI 디자이너 경력 |
+| Part                   | Skills                                                                                                                                     |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Frontend               | - **React(Next), Typescript<br>**- Tanstack Query, Zustand, Redux Toolkit, MobX<br>- Jest, React testing library<br>- Storybook, i18next, Radix<br> |
+| Backend                | - Node(Express)                                                                                                                            |
+| AWS                    | - EC2, Route53, RDS(MySQL), S3                                                                                                             |
+| UX/UI                  | - 5년간의 웹/UI 디자이너 경력                                                                                                              |
+| Collaborative | - Git, Notion, Slack, Figma, Linear, Jira, Miro                                                                                            | 
 
 ## Non Technical
 
 #### 이렇게 일합니다.
 
-- 어떻게 하면 더 잘 일할 수 있을지 고민하며 도전하며 실패하며 다시 도전합니다.
-- 빠른 의사소통을 위해 동료들의 질문이나 도움 요청, 코드 리뷰 등을 항상 높은 우선 순위에 두려고 노력합니다.
-- UI 개발 할 때 가장 즐거움을 느낍니다.
-- 동료들과 본인의 성장을 위한 코드리뷰 문화를 선호합니다.
+- 좋은 UX/UI를 만들기 위해 함께 고민합니다.
+- 동료들과 본인의 성장을 위한 코드리뷰 문화를 좋아합니다.
+- 현재의 나보다 일을 더 잘 하기 위해 고민하고 노력합니다.
+- 빠른 의사소통을 위해 내 업무 보다는 동료들의 질문이나 도움 요청, 코드 리뷰 등을 항상 높은 우선 순위에 두려고 노력합니다.
 
 #### 이런 회사/동료들과 함께 일하고 싶습니다.
 
@@ -102,18 +125,7 @@ iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 
 #### 이런 것들을 고민하고 있습니다.
 
 - 동료 개발자들이 사용하기 쉬운 디자인시스템은 어떤 모습일까?
-- 함수형 패러다임 처럼, 작은 컴포넌트들을 조합하여 다양한 것들을 구현할 수 있지 않을까?
-- SRP를 지키기 위해 Presentational 컴포넌트는 여전히 필요하지 않을까?
 - 어떻게 하면 적은 커뮤니케이션 비용으로 내 의견이나 정보를 쉽게 전달할 수 있을까?
-
-#### 사용했던 협업 툴은 이렇습니다.
-
-- Notion
-- Slack
-- Figma
-- Linear
-- Jira
-- Miro
 
 ## Other experience
 
