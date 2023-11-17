@@ -7,6 +7,16 @@
 
 5년의 디자이너 경력이 있으며 여전히 좋은 UX/UI 에 대한 관심이 있습니다. 좋은 UX란, 거슬리는 게 없는 것. 이라고 생각합니다.
 
+## Skills
+
+| Part                   | Skills                                                                                                                                     |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Frontend               | - **React(Next), Typescript**<br>- Tanstack Query, MobX, Redux Toolkit<br>- Jest, React testing library<br>- Storybook, i18next, Radix, Canvas<br> |
+| Backend                | - Node(Express)                                                                                                                            |
+| AWS                    | - EC2, Route53, RDS(MySQL), S3                                                                                                             |
+| UX/UI                  | - 5년간의 웹/UI 디자이너 경력                                                                                                              |
+| Collaborative | - Git, Notion, Slack, Figma, Linear, Jira, Miro                                                                                            | 
+
 ## Experience
 
 ### 🏢 플렉스 (flex)
@@ -15,35 +25,30 @@
 
 https://flex.team
 
-flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결하는 **B2B HR SaaS** 입니다. flex 에서 근무하는 동안 저는 가장 많은 유저들이 사용하는 타임트래킹 제품을 개발, 운영하였습니다. 타임트래킹 제품은 구성원 평가의 근거가 되는 근무, 휴가와 같은 근태관리에 대한 문제를 해결합니다.
+flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결하는 **B2B HR SaaS** 입니다. flex 에서 근무하는 동안, 저는 가장 많은 유저들이 사용하는 제품인 타임트래킹 제품을 개발, 운영, 배포하였습니다. 타임트래킹 제품은 구성원 평가의 근거가 되는 근무, 휴가와 같은 근태관리에 대한 문제를 해결합니다.
 
 #### 사용 기술, 특이사항
 
 - React, Next, Typescript
-- Tanstack Query, Stitches, Radix UI, Antd, Lodash, date-fns, i18next, react-window
+- Tanstack Query v4, Stitches, Radix UI, Antd, Lodash, date-fns, i18next, react-window
 - Micro Frontent, Monorepo, compound component pattern
 
 #### 타임트래킹 제품 개발/운영
 
-- 온 콜 - VOC 대응
-- IA 개편
-- 설정 화면 개편
-- 서로 의존하는 필드가 많은 복잡한 폼 개발
-- 합성 컴포넌트를 응용하여 컴포넌트의 재활용성을 높임
+- 사용자 만족도와 제품의 사용자 경험, 버그등을 개선하기 위한 VOC 대응
+- 사용자 경험 개선을 위한 IA(정보 구조) 개선에 대응하여, 복잡한 애플리케이션 내의 Next 와 React Router 구조를 리팩토링
+- 더 나은 DX를 위해 합성 컴포넌트를 응용하여 컴포넌트의 재활용성을 높임
 
 #### 사용자 이벤트 로깅 사내 패키지 2.0 버전 개발
 
-- 페이지 구조가 대대적으로 개편되면서 페이지에 의존하는 수 많은 이벤트 로깅을 직접 수정해야 했고, 페이지 구조가 바뀔 때 마다 수 십 시간을 들여야 하는 이슈를 개선
-- 페이지가 아닌 기능 단위에 의존하도록 변경하여, 페이지 구조가 바뀌어도 로깅을 수정하지 않도록 개선함
-- 개발 가이드 문서 제공
+- IA(정보 구조)개선에 따른 이벤트 로깅 스키마 변경에 대응하기 위해 발생하는 시간적 유지보수 비용을 줄이기 위해, 이벤트 로깅 사내 패키지 2.0 버전 개발하여, 시간적 유지보수 비용을 없앰
+- 동료들이 편하게 응용할 수 있도록 개발 가이드 문서 제공
 
 #### 날짜, 시간 포맷터 패키지 개발
 
-- 서비스 전반적으로 날짜와 시간 포맷을 제품마다 서로 다르게 사용하는 문제를 해결
-- 날짜 시간 포맷에 대한 공통 문서 정의
-- FE 개발자들을 위한 날짜, 시간 포맷터 패키지 개발
-- 개발 가이드 문서 제공
-- Jest 를 사용하여 Test Driven Development
+- 서비스 전반적으로 날짜와 시간 포맷이 일관되지 못한 문제와 타임존 이슈 등을 해결하기 위해 날짜, 시간 포맷터 패키지 개발
+- 사내 패키지 안정성을 위한 테스트 주도 개발(TDD)
+- 동료들이 편하게 응용할 수 있도록 개발 가이드 문서 제공
 
 ### 🏢 언디파인드 (Undefined)
 
@@ -58,22 +63,14 @@ iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 
 
 #### iScrim 제품 개발/운영
 
-- SVG, Canvas 를 이용한 데이터 시각화
-	- 토너먼트, 라운드로빈 등 여러 대회 형태별 대진표 화면 구현
-	- 통계 데이터 그래프화
-- Socket 기술을 이용한 실시간 대회 진행
-- 대회 운영자, 참여자들간의 채팅 기능 구현
-- 다크/라이트 모드와 다국어 구현
-- DX 개선을 위한 리팩토링
-	- depth 가 깊어 로직을 찾기 힘들던 구조를 개선
-	- SRP를 반영하기 위해 뷰와 기능을 완전히 분리
-- 반응형 웹 디자인
+- 실시간 대회 진행, 운영자와 사용자간 실시간 커뮤니케이션을 위해 Socket 기술을 적용
+- 대회 운영자들에게 알기 쉽고 유의미한 통계 데이터와 대회 정보, 대진표를 보여주기 위해 SVG, Canvas 기술로 그래프 구현
+- 컴포넌트를 찾기 어려워질 만큼 앱이 커져서, 더 빠른 개발과 나은 DX를 위해 컴포넌트 구조 리팩토링 - SRP, Flatten component tree
 
-#### 사내 UI 라이브러리(React) 개발
+#### 사내 디자인 시스템 UI 라이브러리(React) 개발
 
-- 검색 가능한 드롭다운 메뉴 등 20여개의 컴포넌트 개발
-- NPM 패키지로 배포
-- Storybook 문서화
+- 디자인 일관성과 생산성을 높이기 위해 디자인 시스템 구축, 패키지 개발
+- 다른 직군 동료들과 함께 UI 테스트를 할 수 있도록 Storybook 으로 문서화
 
 ### 🧑🏻‍💻 가계부 서비스: 틈씀이
 
@@ -81,29 +78,23 @@ iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 
 
 https://johnykim.me/work/tumssum
 
-오랜시간 써 온 가계부를 더 편리하게 쓰기 위해 공부도 할 겸 만들어 본 프로젝트입니다. 최소 기능으로 먼저 배포하여 9개월 넘게 직접 사용하며 테스트 했습니다. 달력, 보드 등에서 드래그 앤 드롭으로 쉽게 관리할 수 있습니다.
-
-[스토리북 주도 개발(SDD)](https://johnykim.me/post/%EB%AC%B8%EC%84%9C%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C#%F0%9F%93%98%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B6%81%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C)과 TDD를 철저하게 지키며 작업했습니다. 스토리북 주도 개발이란 UI를 개발할 때 스토리북 서버만 켜두고 하는 것입니다. 강제적인 관심사 분리로 비즈니스 로직을 신경쓰지 않을 수 있어서 좋았습니다. 컴포넌트 하나당 `index.ts, X.tsx, X.test.tsx, X.stories.tsx, X.scss` 이렇게 다섯개의 파일이 필요했습니다.
+오랜시간 써 온 가계부를 더 편리하게 쓰기 위해 공부도 할 겸 만들어 본 프로젝트입니다. 최소 기능으로 먼저 배포하여 9개월 넘게 직접 사용하며 테스트 했습니다. 
 
 #### 사용 기술
 
 - React, Django(Python), Redux toolkit, SCSS
-- Storybook, React testing library, Jest
-- Email authentication (JWT token)
-- OAuth2 : Kakao, Google
+- Storybook, Docker, React testing library, Jest
+- OAuth2(Social authentication), Email authentication (JWT token)
 - AWS : EC2, RDS(MySQL)
 - [관계형 데이터](https://drawsql.app/teams/johnyworld/diagrams/tumssum) 설계
 - 반응형 웹 디자인
 
-## Skills
+#### 서비스 개발/운영
 
-| Part                   | Skills                                                                                                                                     |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Frontend               | - **React(Next), Typescript<br>**- Tanstack Query, Zustand, Redux Toolkit, MobX<br>- Jest, React testing library<br>- Storybook, i18next, Radix<br> |
-| Backend                | - Node(Express)                                                                                                                            |
-| AWS                    | - EC2, Route53, RDS(MySQL), S3                                                                                                             |
-| UX/UI                  | - 5년간의 웹/UI 디자이너 경력                                                                                                              |
-| Collaborative | - Git, Notion, Slack, Figma, Linear, Jira, Miro                                                                                            | 
+- 안정성과 개인 학습을 위해 [스토리북 주도 개발(SDD)](https://johnykim.me/post/%EB%AC%B8%EC%84%9C%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C#%F0%9F%93%98%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B6%81%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C) 과 TDD를 지키며 개발
+- 개인 학습을 위해 EC2, RDS(MySQL), Route53, S3 등 유료 AWS 서비스를 적극 이용
+- 개인 학습과 로컬 환경과 동일한 EC2 환경에서 서버를 띄우기 위해 도커 환경 구축
+- 쉽고 직관적으로 가계부를 쓸 수 있도록 드래그 앤 드롭 기능 자체 개발
 
 ## Non Technical
 
