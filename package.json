@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "gen": "ts-node script/generateList.ts && ts-node script/generateReadme"
+    "gen": "ts-node script/generateList.ts && ts-node script/generateReadme",
+    "deploy": "yarn gen && git add . && git commit -m 'Vault updated' && git push"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",

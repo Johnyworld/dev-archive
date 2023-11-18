@@ -5,7 +5,7 @@
 **4년 차 프론트엔드 개발자**로서 주로 웹 서비스의 개발, 운영을 담당하고 있습니다.
 초기 멤버로 스타트업에 합류하여 서비스가 MAU 30,000을 달성하고 TIPS 프로그램에 선정되는 성장을 하는 동안 서비스의 프론트엔드 개발을 주도 하였던 경험이 있습니다.
 
-5년의 디자이너 경력이 있으며 여전히 좋은 UX/UI 에 대한 관심이 있습니다. 좋은 UX란, 거슬리는 게 없는 것. 이라고 생각합니다.
+5년의 디자이너 경력이 있으며 여전히 좋은 UX/UI에 대한 관심이 있습니다. 좋은 UX란, 거슬리는 게 없는 것. 이라고 생각합니다.
 
 ## Skills
 
@@ -25,7 +25,7 @@
 
 https://flex.team
 
-flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결하는 **B2B HR SaaS** 입니다. flex 에서 근무하는 동안, 저는 가장 많은 유저들이 사용하는 제품인 타임트래킹 제품을 개발, 운영, 배포하였습니다. 타임트래킹 제품은 구성원 평가의 근거가 되는 근무, 휴가와 같은 근태관리에 대한 문제를 해결합니다.
+flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결하는 **B2B HR SaaS** 입니다. flex에서 근무하는 동안, 저는 가장 많은 사용자를 가진 제품인 타임트래킹 제품을 개발, 운영, 배포하였습니다. 타임트래킹 제품은 구성원 평가의 근거가 되는 근무, 휴가와 같은 근태관리에 대한 문제를 해결합니다.
 
 #### 사용 기술, 특이사항
 
@@ -85,16 +85,15 @@ https://johnykim.me/work/tumssum
 - React, Django(Python), Redux toolkit, SCSS
 - Storybook, Docker, React testing library, Jest
 - OAuth2(Social authentication), Email authentication (JWT token)
-- AWS : EC2, RDS(MySQL)
-- [관계형 데이터](https://drawsql.app/teams/johnyworld/diagrams/tumssum) 설계
-- 반응형 웹 디자인
+- AWS EC2, RDS(MySQL)
+- [관계형 데이터](https://drawsql.app/teams/johnyworld/diagrams/tumssum) 설계, 반응형 웹 디자인
 
 #### 서비스 개발/운영
 
-- 안정성과 개인 학습을 위해 [스토리북 주도 개발(SDD)](https://johnykim.me/post/%EB%AC%B8%EC%84%9C%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C#%F0%9F%93%98%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B6%81%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C) 과 TDD를 지키며 개발
-- 개인 학습을 위해 EC2, RDS(MySQL), Route53, S3 등 유료 AWS 서비스를 적극 이용
-- 개인 학습과 로컬 환경과 동일한 EC2 환경에서 서버를 띄우기 위해 도커 환경 구축
-- 쉽고 직관적으로 가계부를 쓸 수 있도록 드래그 앤 드롭 기능 자체 개발
+- 안정성과 개인 학습을 위해 [**스토리북 주도 개발(SDD)**](https://johnykim.me/post/%EB%AC%B8%EC%84%9C%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C#%F0%9F%93%98%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B6%81%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C) 과 **TDD**를 지키며 개발
+- 개인 학습을 위해 **EC2, RDS(MySQL)** 등 유료 AWS 서비스를 적극 이용
+- 개인 학습과 로컬 환경과 동일한 EC2 환경을 구축하기 위해 **Docker** 도입
+- 쉽고 직관적으로 가계부를 쓸 수 있도록 **드래그 앤 드롭** 기능 자체 개발
 
 ## Non Technical
 
