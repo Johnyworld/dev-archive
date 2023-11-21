@@ -11,17 +11,21 @@
 
 | Part                   | Skills                                                                                                                                     |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Frontend               | - **React(Next), Typescript**<br>- Tanstack Query, MobX, Redux Toolkit<br>- Jest, React testing library<br>- Storybook, i18next, Radix, Canvas<br> |
+| Frontend               | - **React(Next), Typescript**<br>- **React Query**, MobX, Redux Toolkit<br>- Jest, React testing library<br>- Storybook, i18next, Radix, Canvas<br>- TailwindCSS, SCSS, Styled-components |
 | Backend                | - Node(Express)                                                                                                                            |
 | AWS                    | - EC2, Route53, RDS(MySQL), S3                                                                                                             |
 | UX/UI                  | - 5년간의 웹/UI 디자이너 경력                                                                                                              |
 | Collaborative | - Git, Notion, Slack, Figma, Linear, Jira, Miro                                                                                            | 
 
+- 리액트에서 합성 컴포넌트 패턴으로 컴포넌트를 만들고 사용하는데 익숙합니다.
+- 리액트에서 Suspense, ErrorBoundary를 사용하여 API 요청 단위로 컴포넌트를 쪼개어 선언적인 로딩과 에러 화면을 관리하는 것에 익숙합니다.
+- 반응형 웹 디자인에 대응하는 것에 익숙합니다.
+
 ## Experience
 
 ### 🏢 플렉스 (flex)
 
-**2022. 04. - 2023. 10.** - Frontend Engineer
+**2022. 04. - 2023. 10.** : 1년 6개월 - Frontend Engineer
 
 https://flex.team
 
@@ -47,12 +51,12 @@ flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결�
 #### 날짜, 시간 포맷터 패키지 개발
 
 - 서비스 전반적으로 날짜와 시간 포맷이 일관되지 못한 문제와 타임존 이슈 등을 해결하기 위해 날짜, 시간 포맷터 패키지 개발
-- 사내 패키지 안정성을 위한 테스트 주도 개발(TDD)
+- 패키지 안정성을 위한 테스트 주도 개발(TDD)
 - 동료들이 편하게 응용할 수 있도록 개발 가이드 문서 제공
 
 ### 🏢 언디파인드 (Undefined)
 
-**2021. 02 - 2023. 01** - Frontend Developer
+**2021. 02. - 2023. 01.** : 1년 11개월 - Frontend Developer
 
 iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 시작 된 **B2B SaaS 대회 운영 플랫폼** 입니다. 초기 멤버로서 프론트엔드 전반적인 부분을 주도 했으며 제품 기획에도 참여하였습니다. 게임 BJ, 대형 스크럼 팀, 게임 개발사와의 협업, 국내 지역 이스포츠 행사 등을 통해 서비스는 천천히 성장했고 여러 국가에 걸쳐 **MAU 30,000** 을 달성하였습니다.
 
@@ -90,10 +94,57 @@ https://johnykim.me/work/tumssum
 
 #### 서비스 개발/운영
 
-- 안정성과 개인 학습을 위해 [**스토리북 주도 개발(SDD)**](https://johnykim.me/post/%EB%AC%B8%EC%84%9C%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C#%F0%9F%93%98%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B6%81%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C) 과 **TDD**를 지키며 개발
+- 안정성과 개인 학습을 위해 [**스토리북 주도 개발(SDD)**](%EB%AC%B8%EC%84%9C%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C#%F0%9F%93%98%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B6%81%20%EC%A3%BC%EB%8F%84%20%EA%B0%9C%EB%B0%9C) 과 **TDD**를 지키며 개발
 - 개인 학습을 위해 **EC2, RDS(MySQL)** 등 유료 AWS 서비스를 적극 이용
 - 개인 학습과 로컬 환경과 동일한 EC2 환경을 구축하기 위해 **Docker** 도입
 - 쉽고 직관적으로 가계부를 쓸 수 있도록 **드래그 앤 드롭** 기능 자체 개발
+
+<details class="print:hidden">
+<summary>디자인 경력 보기</summary>
+### 🏢 크로스디자인그룹
+
+**2018. 03. - 2019. 07.** : 1년 4개월 - Web Designer, Web Publisher
+
+#### 워드프레스 홈페이지 개발
+
+- 빅픽처 엔터테인먼트
+- 송도 수한의원
+- (주) 텍슨
+- 에리어플러스2018
+- 펫서포터즈
+- UScomtru
+- 장성병원
+
+#### 영상 촬영, 편집, 사진 (Cannon 5D mark4)
+
+- 대한산업보건협회 55주년 히스토리영상 편집
+- 국제패션디자인전문학교 2018 졸업패션쇼 스케치영상 촬영, 편집
+- 국제패션디자인전문학교 2018 방학 특별수업 홍보영상 4건
+- 국제패션디자인전문학교 교수, 학생 인터뷰 영상 촬영 및 편집
+- 국제패션디자인전문학교 2017 졸업전시회 영상 편집
+- 라율한의원 인테리어, 원장 프로필 사진 촬영
+- (주)넥셀 실험실 내부, 실험 장면 촬영 (홈페이지 삽입용)
+
+### 🏢 대형 병원 브랜드 디자이너
+
+**2017. 04. - 2017. 10.** : 7개월 - Web/BX Designer (대리)
+
+- 스타일가이드 제작 참여
+- 웹 디자인, 웹 배너, 팝업, 이벤트 페이지, 제품 페이지 제작
+- 옥외광고물, 인쇄물, 포스터 등 제작
+
+### 🏢 아이레디자인
+
+**2013. 11. - 2016. 11.** : 3년 - UI Designer
+
+- Samsung 포터블 SSD 보안프로그램 GUI 디자인 제작
+- KRX 국제금융센터 금융거래 체험관 스크린, 키오스크등 기획 및 GUI 디자인 제작
+- Samsung 스마트리모트 스타일가이드 제작 참여
+- Samsung 모바일 테마 100건 이상 제작
+- Samsung Gallaxy S5 갤러리앱 테마 디자인 참여
+- Samsung 인사이트 런처 스티콘 디자인 참여
+- Galaxy Watch 기본 테마 디자인 참여
+</details>
 
 ## Non Technical
 
