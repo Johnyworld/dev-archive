@@ -17,13 +17,13 @@
 | UX/UI                  | - 5년간의 웹/UI 디자이너 경력                                                                                                              |
 | Collaborative | - Git, Notion, Slack, Figma, Linear, Jira, Miro                                                                                            | 
 
-- 리액트에서 합성 컴포넌트 패턴으로 컴포넌트를 만들고 사용하는데 익숙합니다.
-- 리액트에서 Suspense, ErrorBoundary를 사용하여 API 요청 단위로 컴포넌트를 쪼개어 선언적인 로딩과 에러 화면을 관리하는 것에 익숙합니다.
+- 리액트) 다양한 UI 요구사항에 유연하게 대응하기 위한 합성 컴포넌트 패턴으로 컴포넌트를 구현하고 사용하는데 익숙합니다.
+- 리액트) Suspense, ErrorBoundary를 사용하여 API 요청 단위로 컴포넌트를 쪼개어 선언적인 로딩과 에러 화면을 관리하는 것에 익숙합니다.
 - 반응형 웹 디자인에 대응하는 것에 익숙합니다.
 
 ## Experience
 
-### 🏢 플렉스 (flex)
+### 플렉스 (flex)
 
 **2022. 04. - 2023. 10.** : 1년 6개월 - Frontend Engineer
 
@@ -35,7 +35,7 @@ flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결�
 
 - React, Next, Typescript
 - Tanstack Query v4, Stitches, Radix UI, Antd, Lodash, date-fns, i18next, react-window
-- Micro Frontent, Monorepo, compound component pattern
+- Micro Frontent, Monorepo
 
 #### 타임트래킹 제품 개발/운영
 
@@ -54,7 +54,7 @@ flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결�
 - 패키지 안정성을 위한 테스트 주도 개발(TDD)
 - 동료들이 편하게 응용할 수 있도록 개발 가이드 문서 제공
 
-### 🏢 언디파인드 (Undefined)
+### 언디파인드 (Undefined)
 
 **2021. 02. - 2023. 01.** : 1년 11개월 - Frontend Developer
 
@@ -76,7 +76,7 @@ iScrim 제품은 전 세계 아마추어 E-Sports 생태계를 만들기 위해 
 - 디자인 일관성과 생산성을 높이기 위해 디자인 시스템 구축, 패키지 개발
 - 다른 직군 동료들과 함께 UI 테스트를 할 수 있도록 Storybook 으로 문서화
 
-### 🧑🏻‍💻 가계부 서비스: 틈씀이
+### 가계부 서비스: 틈씀이
 
 개인 프로젝트
 
@@ -136,7 +136,7 @@ https://johnykim.me/work/tumssum
 - Github : https://github.com/Johnyworld
 - Velog : https://velog.io/@johnyworld
 
-<div class='cv_profile_L9T3v'>
+<div className='cv_profile_L9T3v'>
 ![](https://johnyworld2019.s3.ap-northeast-2.amazonaws.com/images/resume/me-1.png)
 </div>
 
@@ -145,26 +145,28 @@ div.cv_profile_L9T3v {
   position: absolute;
   top: 106px;
   right: 16px;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  overflow: hidden;
   margin: 0;
-  filter: grayscale(1);
+  z-index: -1;
 }
 
 div.cv_profile_L9T3v img {
-  width: 100%;
-  height: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  filter: grayscale(1);
   object-fit: cover;
 }
 
 @media screen and (max-width: 566px) {
-  div.cv_profile_L9T3v  {
+  div.cv_profile_L9T3v img  {
     width: 70px;
     height: 70px;
-    z-index: -1;
 	opacity: 0.8;
   }
+}
+
+#Experience, 
+#Non-Technical {
+	page-break-before: always;
 }
 </style>
