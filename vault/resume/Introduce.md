@@ -132,6 +132,7 @@ https://johnykim.me/work/tumssum
 
 - Mobile : 010-4806-3340
 - Email : johnyworld@naver.com
+- Blog : https://johnykim.me
 - LinkedIn: https://www.linkedin.com/in/fe-johnykim/
 - Github : https://github.com/Johnyworld
 - Velog : https://velog.io/@johnyworld
