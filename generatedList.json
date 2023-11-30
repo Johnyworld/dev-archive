@@ -1,10 +1,10 @@
 [
   {
-    "title": "use client 선언 된 컴포넌트도 서버에서 먼저 렌더링된다",
-    "path": "vault/tech/use client 선언 된 컴포넌트도 서버에서 먼저 렌더링된다.md",
+    "title": "클라이언트 컴포넌트도 서버에서 먼저 렌더링된다",
+    "path": "vault/tech/클라이언트 컴포넌트도 서버에서 먼저 렌더링된다.md",
     "createdAt": "2023-11-30",
-    "modifiedAt": "2023-11-30T09:04:13.788Z",
-    "tags": ["연구", "NextJS"]
+    "modifiedAt": "2023-11-30T09:27:32.258Z",
+    "tags": ["공부"]
   },
   {
     "title": "늦었지만 tailwind CSS 를 써봤다",
@@ -24,7 +24,7 @@
     "title": "css module 사용시 타이핑 하는 방법",
     "path": "vault/tech/css module 사용시 타이핑 하는 방법.md",
     "createdAt": "2023-10-27",
-    "modifiedAt": "2023-11-01T04:21:37.095Z",
+    "modifiedAt": "2023-11-30T09:27:22.937Z",
     "tags": ["팁"]
   },
   {
