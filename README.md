@@ -6,6 +6,12 @@
 
 ---
 
+### NextJS
+
+- [use client 선언 된 컴포넌트도 서버에서 먼저 렌더링된다](vault/tech/use%20client%20선언%20된%20컴포넌트도%20서버에서%20먼저%20렌더링된다.md)
+
+\_
+
 ### 공부
 
 - [브라우저 렌더링](vault/tech/브라우저%20렌더링.md)
@@ -50,6 +56,12 @@
 - [삽질의 중요성](vault/tech/삽질의%20중요성.md)
 - [리액트와 Atomic Design System에 대하여](vault/tech/리액트와%20Atomic%20Design%20System에%20대하여.md)
 - [React 컴포넌트의 역할에 대한 생각](vault/tech/React%20컴포넌트의%20역할에%20대한%20생각.md)
+
+\_
+
+### 연구
+
+- [use client 선언 된 컴포넌트도 서버에서 먼저 렌더링된다](vault/tech/use%20client%20선언%20된%20컴포넌트도%20서버에서%20먼저%20렌더링된다.md)
 
 \_
 

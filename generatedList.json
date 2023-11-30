@@ -1,5 +1,12 @@
 [
   {
+    "title": "use client 선언 된 컴포넌트도 서버에서 먼저 렌더링된다",
+    "path": "vault/tech/use client 선언 된 컴포넌트도 서버에서 먼저 렌더링된다.md",
+    "createdAt": "2023-11-30",
+    "modifiedAt": "2023-11-30T09:04:13.788Z",
+    "tags": ["연구", "NextJS"]
+  },
+  {
     "title": "늦었지만 tailwind CSS 를 써봤다",
     "path": "vault/tech/늦었지만 tailwind CSS 를 써봤다.md",
     "createdAt": "2023-11-14",
