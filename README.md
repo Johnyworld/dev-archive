@@ -28,6 +28,7 @@
 
 ### 문제해결
 
+- [Error Hiding 을 피하자](vault/tech/Error%20Hiding%20을%20피하자.md)
 - [css module 로 생성되는 classname 의 prefix 를 바꿔보자](vault/tech/css%20module%20로%20생성되는%20classname%20의%20prefix%20를%20바꿔보자.md)
 - [Next JS 스타일 번들 중복 이슈](vault/tech/Next%20JS%20스타일%20번들%20중복%20이슈.md)
 - [여러 github 계정을 사용하는 경우 ssh 접속시 Permission Denied 이슈를 해결 해보자.](vault/tech/여러%20github%20계정을%20사용하는%20경우%20ssh%20접속시%20Permission%20Denied%20이슈를%20해결%20해보자..md)

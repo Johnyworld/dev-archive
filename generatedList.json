@@ -1,5 +1,12 @@
 [
   {
+    "title": "Error Hiding 을 피하자",
+    "path": "vault/tech/Error Hiding 을 피하자.md",
+    "createdAt": "2023-12-05",
+    "modifiedAt": "2023-12-05T11:51:23.916Z",
+    "tags": ["문제해결"]
+  },
+  {
     "title": "클라이언트 컴포넌트도 서버에서 먼저 렌더링된다",
     "path": "vault/tech/클라이언트 컴포넌트도 서버에서 먼저 렌더링된다.md",
     "createdAt": "2023-11-30",
