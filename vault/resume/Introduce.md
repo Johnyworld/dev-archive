@@ -18,7 +18,7 @@
 | Collaborative | - Git, Notion, Slack, Figma, Linear, Jira, Miro                                                                                            | 
 
 - 리액트) 다양한 UI 요구사항에 유연하게 대응하기 위한 합성 컴포넌트 패턴으로 컴포넌트를 구현하고 사용하는데 익숙합니다.
-- 리액트) Suspense, ErrorBoundary를 사용하여 API 요청 단위로 컴포넌트를 쪼개어 선언적인 로딩과 에러 화면을 관리하는 것에 익숙합니다.
+- 리액트) Concurrent UI 패턴(Suspense, ErrorBoundary를 사용하여 API 요청 단위로 컴포넌트를 쪼개어 선언적인 로딩과 에러 화면을 관리하는 것)에 익숙합니다.
 - 반응형 웹 디자인에 대응하는 것에 익숙합니다.
 
 ## Experience
@@ -34,8 +34,8 @@ flex는 기업이 겪는 사람과 조직에 관한 다양한 문제를 해결�
 #### 사용 기술, 특이사항
 
 - React, Next, Typescript
-- Tanstack Query v4, Stitches, Radix UI, Antd, Lodash, date-fns, i18next, react-window
-- Micro Frontent, Monorepo
+- Tanstack Query v4, Stitches, Radix UI, AntD, lodash, date-fns, i18next, react-window
+- Micro Frontend, Monorepo
 
 #### 타임트래킹 제품 개발/운영
 
